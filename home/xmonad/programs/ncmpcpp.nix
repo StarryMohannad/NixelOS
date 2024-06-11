@@ -1,5 +1,5 @@
 { config, pkgs, ... }:
 
 {
- program.ncmpcpp.enable = true
+ programs.ncmpcpp.enable = true;
 }

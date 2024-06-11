@@ -66,8 +66,8 @@ myModMask       = mod4Mask
 
 -- Command Prefixes
 myExecFolder = "~/.local/nf/bin/"
-myOpenSfx    = "setsid -f mpv --no-video ~/.local/nf/files/sounds/open.mp3; "
-myMenuSfx    = "setsid -f mpv --no-video ~/.local/nf/files/sounds/menu.open.mp3; "
+myOpenSfx    = "setsid -f mpv --no-video ~/.local/share/sounds/open.mp3; "
+myMenuSfx    = "setsid -f mpv --no-video ~/.local/share/sounds/menu.open.mp3; "
 
 -- center and float window
 centerWindow :: Window -> X ()
@@ -141,7 +141,7 @@ myKeys = \c -> mkKeymap c $
  , ("M-q", spawn "xmonad --recompile; xmonad --restart")
 
     -- Run xmessage with a summary of the default keybindings (useful for beginners)
- , ("M-S-/", spawn ("cat ~/.local/nf/data/xmonad.help | gxmessage -ontop -title 'XMonad Help :3' -file -"))
+ , ("M-S-/", spawn ("cat ~/.local/share/xmonad-data/xmonad.help | gxmessage -ontop -title 'XMonad Help :3' -file -"))
 
     -- Go to Workspace
  , ("M-1", windows $ W.greedyView $ myWorkspaces !! 0)
@@ -215,9 +215,8 @@ myEventHook = mempty
 --
 -- By default, do nothing.
 myStartupHook = do
- spawnOnce "xwallpaper --zoom ~/.local/nf/files/wallpaper.jpg &"
  spawnOnce "xcompmgr &"
- spawnOnce "mpv --no-video ~/.local/nf/files/sounds/startup.mp3 &"
+ spawnOnce "mpv --no-video ~/.local/share/sounds/startup.mp3 &"
  spawnOnce "keepassxc &"
  spawnOnce "~/.local/nf/bin/pf-trayer"
 

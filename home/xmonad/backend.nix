@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, lib, pkgs, ... }:
 
 {
  xdg.mime.enable = true;
@@ -14,5 +14,5 @@
  services.trayer.enable = true;
  
  programs.rofi.enable = true;
- programs.rofi.font = "FiraCode Nerd Font 12"; 
+ programs.rofi.font = lib.mkForce "FiraCode Nerd Font 11";
 }
