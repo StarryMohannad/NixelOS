@@ -1,95 +1,101 @@
 { inputs, config, pkgs, ... }:
 
 {
-  # Home Manager needs a bit of information about you and the paths it should
-  # manage.
-  #home.username = "starry";
-  #home.homeDirectory = "/home/starry";
+ # Home Manager needs a bit of information about you and the paths it should
+ # manage.
+ #home.username = "starry";
+ #home.homeDirectory = "/home/starry";
 
-  imports = [
-    inputs.impermanence.nixosModules.home-manager.impermanence
-    ./environment/main.nix
-    ./programs/main.nix
-    ./services/main.nix
-  ];
+ imports = [
+   inputs.impermanence.nixosModules.home-manager.impermanence
+   ./environment/main.nix
+   ./programs/main.nix
+   ./services/main.nix
+ ];
 
-  programs.kitty.enable = true;
+ programs.kitty.enable = true;
 
-  # This value determines the Home Manager release that your configuration is
-  # compatible with. This helps avoid breakage when a new Home Manager release
-  # introduces backwards incompatible changes.
-  #
-  # You should not change this value, even if you update Home Manager. If you do
-  # want to update the value, then make sure to first check the Home Manager
-  # release notes.
-  home.stateVersion = "24.05"; # Please read the comment before changing.
+ # This value determines the Home Manager release that your configuration is
+ # compatible with. This helps avoid breakage when a new Home Manager release
+ # introduces backwards incompatible changes.
+ #
+ # You should not change this value, even if you update Home Manager. If you do
+ # want to update the value, then make sure to first check the Home Manager
+ # release notes.
+ home.stateVersion = "24.05"; # Please read the comment before changing.
 
-  # The home.packages option allows you to install Nix packages into your
-  # environment.
-  nixpkgs.config.allowUnfree = true;  
-  home.packages = with pkgs; [
-    aseprite
-    gimp
-    kdenlive
-    obs-studio
+ # The home.packages option allows you to install Nix packages into your
+ # environment.
+ nixpkgs.config.allowUnfree = true;  
+ home.packages = with pkgs; [
+   aseprite
+   gimp
+   kdenlive
+   obs-studio
 
-    (discord.override { withVencord = true; })
-    keepassxc
+   (discord.override { withVencord = true; })
+   keepassxc
 
-    bat
-    eza
-    mpc-cli
-    neofetch
-    nitch
-    pfetch
-    screenfetch
-    zoxide
+   bat
+   eza
+   mpc-cli
+   neofetch
+   nitch
+   pfetch
+   screenfetch
+   zoxide
 
-    brightnessctl
-    hacksaw
-    pamixer
-    shotgun
+   brightnessctl
+   hacksaw
+   pamixer
+   shotgun
 
-    mpv
-    nsxiv
-    xfce.thunar
-    zathura
+   mpv
+   nsxiv
+   xfce.thunar
+   zathura
 
-    crispy-doom
-    dolphin-emu
-    doomrunner
-    duckstation
-    gzdoom
-    pcsx2
-    prismlauncher
+   crispy-doom
+   dolphin-emu
+   doomrunner
+   duckstation
+   gzdoom
+   pcsx2
+   prismlauncher
 
-    (nerdfonts.override { fonts = [ "FiraCode" ]; })
-    kawkab-mono-font
+   (nerdfonts.override { fonts = [ "FiraCode" ]; })
+   kawkab-mono-font
 
-    dconf
-    syncthing
-    xclip
-    xsel
+   dconf
+   syncthing
+   xclip
+   xsel
 
-    gxmessage
-    dunst
-    xwallpaper
-    xcompmgr
-    xdotool
+   gxmessage
+   dunst
+   xwallpaper
+   xcompmgr
+   xdotool
 
-    xmobar
-  ];
+   xmobar
+ ];
+
+ stylix.targets.firefox.profileNames = ["starry"];
 
  home.persistence."/persist/home/starry".directories = [
+   "Downloads/persist"
    "Sync"
    "Projects"
-   "Downloads/persist"
+
    ".ssh"
    ".var"
    ".mozilla"
+
    ".local/nf"
    ".local/share/keyrings"
    ".local/share/Prismlauncher"
+
+   ".config/discord"
  ];
  home.persistence."/persist/home/starry".allowOther = true;
 

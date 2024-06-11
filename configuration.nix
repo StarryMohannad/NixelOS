@@ -49,6 +49,12 @@
 
  programs.fuse.userAllowOther = true;
 
+ programs.nix-ld.enable = true;
+ programs.nix-ld.libraries = with pkgs; [
+   # Add any missing dynamic libraries for unpackaged programs
+   # here, NOT in environment.systemPackages
+ ];
+
  # networking.hostName = "nixos"; # Define your hostname.
  networking.networkmanager.enable = true;  # Easiest to use and most distros use this by default.
 
@@ -164,6 +170,7 @@
 
  stylix.cursor.package = pkgs.bibata-cursors;
  stylix.cursor.name = "Bibata-Modern-Ice";
+ stylix.cursor.size = 24;
 
  stylix.fonts.monospace.package = pkgs.nerdfonts;
  stylix.fonts.monospace.name = "FiraCode Nerd Font";

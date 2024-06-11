@@ -67,7 +67,7 @@ myModMask       = mod4Mask
 -- Command Prefixes
 myExecFolder = "~/.local/nf/bin/"
 myOpenSfx    = "setsid -f mpv --no-video ~/.local/nf/files/sounds/open.mp3; "
-myMenuSfx    = "setsid -f mpv --no-video ~/.local/nf/files/sounds/menuOpen.mp3; "
+myMenuSfx    = "setsid -f mpv --no-video ~/.local/nf/files/sounds/menu.open.mp3; "
 
 -- center and float window
 centerWindow :: Window -> X ()
@@ -219,7 +219,7 @@ myStartupHook = do
  spawn     "rm -rf ~/.xsession-errors.old"
  spawnOnce "xwallpaper --zoom ~/.local/nf/files/wallpaper.jpg &"
  spawnOnce "xcompmgr &"
- spawnOnce "mpv --no-video ~/.local/nf/data/sounds.startup.mp3 &"
+ spawnOnce "mpv --no-video ~/.local/nf/files/sounds/startup.mp3 &"
  spawnOnce "keepassxc &"
  spawnOnce "~/.local/nf/bin/pf-trayer"
 

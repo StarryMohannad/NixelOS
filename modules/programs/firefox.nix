@@ -8,7 +8,6 @@
    indie-wiki-buddy
    return-youtube-dislikes
    keepassxc-browser
-   gruvbox-dark-theme
  ];
 
  programs.firefox.profiles.starry.settings = {
@@ -109,4 +108,6 @@
    "ui.context_menus.after_mouseup" = true;
    "webgl.disabled" = false;
  };
+
+
 }
