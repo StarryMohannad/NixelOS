@@ -162,7 +162,7 @@
 
  home-manager.extraSpecialArgs = {inherit inputs;};
  home-manager.users = {
-   "starry" = import ./modules/workspace.nix;
+   "starry" = import ./home/xmonad/default.nix;
  };
  
  stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-frappe.yaml";
