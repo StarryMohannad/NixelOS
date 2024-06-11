@@ -215,8 +215,6 @@ myEventHook = mempty
 --
 -- By default, do nothing.
 myStartupHook = do
- spawn     "rm -rf ~/.xsession-errors"
- spawn     "rm -rf ~/.xsession-errors.old"
  spawnOnce "xwallpaper --zoom ~/.local/nf/files/wallpaper.jpg &"
  spawnOnce "xcompmgr &"
  spawnOnce "mpv --no-video ~/.local/nf/files/sounds/startup.mp3 &"

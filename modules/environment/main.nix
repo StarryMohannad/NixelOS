@@ -3,6 +3,7 @@
 {
 
  programs.rofi.enable = true;
+ services.dunst.enable = true;
 
  imports = [
    ./mime.nix

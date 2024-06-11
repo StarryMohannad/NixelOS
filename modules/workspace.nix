@@ -8,6 +8,9 @@
 
  imports = [
    inputs.impermanence.nixosModules.home-manager.impermanence
+
+   ./impermanence.nix
+
    ./environment/main.nix
    ./programs/main.nix
    ./services/main.nix
@@ -72,7 +75,6 @@
    xsel
 
    gxmessage
-   dunst
    xwallpaper
    xcompmgr
    xdotool
@@ -82,24 +84,7 @@
 
  stylix.targets.firefox.profileNames = ["starry"];
 
- home.persistence."/persist/home/starry".directories = [
-   "Downloads/persist"
-   "Sync"
-   "Projects"
-
-   ".ssh"
-   ".var"
-   ".mozilla"
-
-   ".local/nf"
-   ".local/share/keyrings"
-   ".local/share/Prismlauncher"
-
-   ".config/discord"
- ];
- home.persistence."/persist/home/starry".allowOther = true;
-
- # Home Manager is pretty good at managing dotfiles. The primary way to manage
+  # Home Manager is pretty good at managing dotfiles. The primary way to manage
  # plain files is through 'home.file'.
  home.file = {
    ".config/xmonad/xmonad.hs".source = ../files/configs/xmonad.hs;
