@@ -73,6 +73,12 @@
  services.xserver.windowManager.xmonad.enable = true;
  services.xserver.windowManager.xmonad.enableContribAndExtras = true;
 
+ hardware.opengl.enable = true;
+ hardware.opengl.driSupport = true;
+ hardware.opengl.driSupport32Bit = true;
+  
+ services.xserver.videoDrivers = ["amdgpu"];
+
  xdg.portal.enable = true;
  xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
  xdg.portal.config.common.default = "*";
@@ -120,11 +126,19 @@
    libglvnd
    libstdcxx5
    librttopo
+
+   mangohud
  ];
 
  # Enable Flatpaks
  services.flatpak.enable = true;
  services.gvfs.enable = true;
+
+ # Steam
+ nixpkgs.config.allowUnfree = true;
+ programs.steam.enable = true;
+ programs.steam.gamescopeSession.enable = true;
+ programs.gamemode.enable = true;
 
  # Some programs need SUID wrappers, can be configured further or are
  # started in user sessions.
