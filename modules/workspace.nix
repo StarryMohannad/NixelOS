@@ -90,7 +90,6 @@
    ".mozilla"
    ".local/nf"
    ".local/share/keyrings"
-   ".local/share/gnupg"
    ".local/share/Prismlauncher"
  ];
  home.persistence."/persist/home/starry".allowOther = true;
