@@ -14,5 +14,4 @@
  services.trayer.enable = true;
  
  programs.rofi.enable = true;
- programs.rofi.font = lib.mkForce "FiraCode Nerd Font 11";
 }

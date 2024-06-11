@@ -12,6 +12,7 @@
    ./impermanence.nix
    ./packages.nix
    ./backend.nix
+   ./stylix.nix
 
    ./programs/default.nix
    ./services/default.nix
