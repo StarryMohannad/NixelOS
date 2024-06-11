@@ -1,0 +1,5 @@
+#!/bin/sh
+
+setsid -f mpv --no-video ~/.local/nf/files/sounds/menu.open.mp3
+rofi -modi emoji -show emoji -kb-custom-1 Ctrl+c
+setsid -f mpv --no-video ~/.local/nf/files/sounds/menu.close.mp3

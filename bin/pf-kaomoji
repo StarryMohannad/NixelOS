@@ -1,0 +1,29 @@
+#!/bin/sh
+
+# https://github.com/eylles/dmenukaomoji/tree/master
+
+# The famous "get a menu of kaomojis to copy" script.
+
+# Must have xclip installed to even show menu.
+#xclip -h 2>/dev/null || exit 1
+# If this errors, the user wont be able to know why that is happening as there'll be no error message, why not just let it error normally when trynna run?
+
+setsid -f mpv --no-video ~/.local/nf/files/sounds/menu.open.mp3
+
+chosen=$(rofi -dmenu -window-title kaomoji < ~/.local/nf/files/data/kaomoji.txt)
+
+#[ "$chosen" != "" ] || exit
+# The != is a little redundant, just placing the variable itself will check if its non-empty.
+[ "$chosen" ] || exit
+
+# If you run this command with an argument, it will automatically insert the character.
+#if [ -n "$1" ]; then
+# Same as above, -n and -z arent all that usefull...
+if [ "$1" ]; then
+	xdotool key Shift+Insert
+else
+	printf '%s' "${chosen% *}" | xclip -selection clipboard
+	notify-send "'${chosen% *}' copied to clipboard." &
+fi
+
+setsid -f mpv --no-video ~/.local/nf/files/sounds/menu.close.mp3

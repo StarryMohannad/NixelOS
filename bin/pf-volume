@@ -1,0 +1,28 @@
+#!/bin/sh
+
+if [ "$1" == "up" ] ; then
+ pamixer -u
+ pamixer -i 5
+elif [ "$1" == "down" ] ; then
+ pamixer -u
+ pamixer -d 5
+elif [ "$1" == "mute" ] ; then
+ pamixer -t
+else
+ echo "Wrong Command"
+fi
+
+Volume="$(pamixer --get-volume)"
+if [ "$(pamixer --get-mute)" == "true" ] ; then
+ notify-send --replace-id=555 -u normal "Volume: [M]" -t 2000 -h int:value:"0"
+else
+ notify-send "Volume: $Volume%""     " -t 2000 -h int:value:"$Volume" --replace-id=555
+fi
+
+if [ $Volume == 0 ] ; then
+ echo "Don't Play Sound"
+elif [ $Volume == 100 ] ; then
+ echo "Don't Play Sound"
+else
+ setsid -f mpv --no-video ~/.local/nf/files/sounds/hotkey.mp3
+fi
