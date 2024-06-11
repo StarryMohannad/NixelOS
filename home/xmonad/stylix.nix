@@ -2,5 +2,5 @@
 
 {
  programs.rofi.font = lib.mkForce "FiraCode Nerd Font 11";
- stylix.opacity.terminal = 0.95;
+ stylix.opacity.terminal = 0.8;
 }
