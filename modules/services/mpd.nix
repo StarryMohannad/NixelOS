@@ -2,7 +2,7 @@
 
 {
  services.mpd.enable = true;
- services.mpd.musicDirectory = "~/Music";
+ services.mpd.musicDirectory = "~/Sync/Music";
  services.mpd.extraConfig = ''
    audio_output {
      type "pipewire"
