@@ -24,5 +24,5 @@ if [ $Volume == 0 ] ; then
 elif [ $Volume == 100 ] ; then
  echo "Don't Play Sound"
 else
- setsid -f mpv --no-video ~/.local/nf/files/sounds/hotkey.mp3
+ setsid -f mpv --no-video ~/.local/share/sounds/hotkey.mp3
 fi

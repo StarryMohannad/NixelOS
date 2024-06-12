@@ -16,5 +16,5 @@ if [ $Brightness == 0 ] ; then
 elif [ $Brightness == 100 ] ; then
  echo "Don't Play Sound"
 else
- setsid -f mpv --no-video ~/.local/nf/files/sounds/key.mp3
+ setsid -f mpv --no-video ~/.local/share/sounds/key.mp3
 fi

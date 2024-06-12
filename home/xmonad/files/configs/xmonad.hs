@@ -218,7 +218,6 @@ myStartupHook = do
  spawnOnce "xcompmgr &"
  spawnOnce "mpv --no-video ~/.local/share/sounds/startup.mp3 &"
  spawnOnce "keepassxc &"
- spawnOnce "~/.local/nf/bin/pf-trayer &"
 
 ------------------------------------------------------------------------
 -- Now run xmonad with all the defaults we set up.

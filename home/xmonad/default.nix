@@ -9,11 +9,12 @@
  imports = [
    inputs.impermanence.nixosModules.home-manager.impermanence
 
+   ./backend.nix
    ./impermanence.nix
    ./packages.nix
-   ./backend.nix
-   ./stylix.nix
+   ./theme.nix
 
+   ./desktop/default.nix
    ./programs/default.nix
    ./services/default.nix
    ./shell/default.nix

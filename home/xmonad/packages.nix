@@ -11,14 +11,11 @@
    (discord.override { withVencord = true; })
    keepassxc
 
-   bat
-   eza
    mpc-cli
    neofetch
    nitch
    pfetch
    screenfetch
-   zoxide
 
    brightnessctl
    hacksaw
@@ -53,4 +50,6 @@
 
    xmobar
  ];
+
+ programs.mangohud.enable = true;
 }

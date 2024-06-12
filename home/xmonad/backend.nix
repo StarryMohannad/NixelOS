@@ -9,9 +9,4 @@
    "image/*"          = [ "nsxiv.desktop" ];
    "video/*"          = [ "mpv.desktop" ];
  };
-
- services.dunst.enable = true;
- services.trayer.enable = true;
- 
- programs.rofi.enable = true;
 }

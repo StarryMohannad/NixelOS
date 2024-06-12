@@ -8,12 +8,10 @@ in {
    "Projects"
 
    ".local/nf"
+   ".local/share"
  ]
  ++ forEach ["syncthing" "Vencord" "obs-studio" "aseprite" "dolphin-emu" "PCSX2" "discord" "gzdoom" "GIMP" "Thunar" "keepassxc"] (
       x: ".config/${x}"
- )
- ++ forEach ["Steam" "flatpak" "crispy-doom" "PrismLauncher" "zplug" "mpd" "Games" "DoomRunner" "duckstation/GameSettings" "duckstation/Screenshots" "dolphin-emu/texture" "dolphin-emu/screenshots"] (
-      x: ".local/share/${x}"
  )
  ++ [ ".ssh" ".var" ".mozilla" ];
 

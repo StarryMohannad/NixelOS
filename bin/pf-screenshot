@@ -2,7 +2,7 @@
 
 FileDate="$(date '+%Y%m%d%H%M%S')"
 
-setsid -f mpv --no-video ~/.local/nf/files/sounds/menu.open.mp3
+setsid -f mpv --no-video ~/.local/share/sounds/menu.open.mp3
 
 if [ "$1" == "rectangle" ] ; then
 	shotgun -f png -g "$(hacksaw)" ~/Sync/Pictures/Screenshots/"$FileDate".png
@@ -14,5 +14,5 @@ else
 fi
 
 xclip -selection clipboard -t image/png -i ~/Sync/Pictures/Screenshots/"$FileDate".png
-setsid -f mpv --no-video ~/.local/nf/files/sounds/screenshot.mp3
+setsid -f mpv --no-video ~/.local/share/sounds/screenshot.mp3
 notify-send "Screenshot taken" "'$FileDate'.png is now in the clipboard"
