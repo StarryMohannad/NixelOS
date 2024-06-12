@@ -26,25 +26,6 @@
    hashedPassword="$6$U9CycjFVXgPJZ.pr$ciJPJ6SMSSxGyQyLMUJwa6RaWLypHR3kvKW9.xvncU33.N1QnLEWgOfVhjxpjpBMGx1C.aG6Lzr.bhUxsEEko.";
  };
 
- environment.systemPackages = with pkgs; [
-   home-manager
-   pkgsi686Linux.gperftools
-   xorg.libpthreadstubs
-   p7zip
-   unzip
-   vim
-   util-linux
-   wget
-   killall
-   tree
-   lightlocker
-   libnotify
-   libdrm
-   libglvnd
-   libstdcxx5
-   librttopo
- ];
-
  # Some programs need SUID wrappers, can be configured further or are
  # started in user sessions.
  programs.mtr.enable = true;
@@ -53,13 +34,8 @@
    enableSSHSupport = true;
  };
 
- # List services that you want to enable:
-
  # Enable the OpenSSH daemon.
  services.openssh.enable = true;
- 
- networking.firewall.allowedTCPPorts = [ 8384 22000 ];
- networking.firewall.allowedUDPPorts = [ 22000 21027 ];
 
  home-manager.extraSpecialArgs = {inherit inputs;};
  home-manager.users = {
