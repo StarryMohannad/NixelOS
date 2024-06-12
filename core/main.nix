@@ -3,11 +3,11 @@
  imports = [ 
    ../hosts/15s-eq2009ne.nix
 
-   ./impermanence.nix
-   ./fonts.nix
-   
-   ../modules/system/default.nix
-   ../modules/system/xmonad-laptop-power.nix
+   ../modules/base.nix
+   ../modules/displaymanager-fonts.nix
+   ../modules/impermanence.nix
+   ../modules/steam.nix
+   ../modules/xmonad-laptop-power.nix
  ];
 
  # Enable the X11 windowing system.
@@ -56,11 +56,6 @@
    libstdcxx5
    librttopo
  ];
-
- # Steam
- nixpkgs.config.allowUnfree = true;
- programs.steam.enable = true;
- programs.gamemode.enable = true;
 
  # Some programs need SUID wrappers, can be configured further or are
  # started in user sessions.
