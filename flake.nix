@@ -29,13 +29,13 @@
 
  outputs = {nixpkgs, ...} @ inputs:
  {
-    nixosConfigurations."main" = nixpkgs.lib.nixosSystem {
+    nixosConfigurations."main-portable" = nixpkgs.lib.nixosSystem {
       specialArgs = {inherit inputs;};
       modules = [
         inputs.disko.nixosModules.default
         (import ./disko.nix { device = "/dev/nvme0n1"; })
 
-        ./cores/main.nix
+        ./cores/main-portable.nix
               
         inputs.stylix.nixosModules.stylix
         inputs.home-manager.nixosModules.default

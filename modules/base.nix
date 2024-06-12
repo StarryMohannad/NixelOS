@@ -26,8 +26,32 @@
  services.flatpak.enable = true;
  services.gvfs.enable = true;
 
+ # Common Packages
+ environment.systemPackages = with pkgs; [
+   home-manager
+   pkgsi686Linux.gperftools
+   xorg.libpthreadstubs
+   p7zip
+   unzip
+   vim
+   util-linux
+   wget
+   killall
+   tree
+   lightlocker
+   libnotify
+   libdrm
+   libglvnd
+   libstdcxx5
+   librttopo
+ ];
+
  # Firewall
  networking.firewall.enable = true;
+ 
+ # Enable Ports for Syncthing
+ networking.firewall.allowedTCPPorts = [ 8384 22000 ];
+ networking.firewall.allowedUDPPorts = [ 22000 21027 ];
 
  # Configure keymap in X11
  services.xserver.xkb.layout = "us,ara";
