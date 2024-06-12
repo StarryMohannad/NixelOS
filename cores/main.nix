@@ -7,21 +7,9 @@
    ../modules/displaymanager-fonts.nix
    ../modules/impermanence.nix
    ../modules/steam.nix
+   ../modules/xmonad.nix
    ../modules/xmonad-laptop-power.nix
  ];
-
- # Enable the X11 windowing system.
- services.xserver.enable = true;
-
- services.xserver.displayManager.lightdm.enable = true;
- services.xserver.displayManager.lightdm.extraConfig = ''user-authority-in-system-dir = true'';
-
- services.xserver.windowManager.xmonad.enable = true;
- services.xserver.windowManager.xmonad.enableContribAndExtras = true;
-
- xdg.portal.enable = true;
- xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
- xdg.portal.config.common.default = "*";
 
  # Enable touchpad support (enabled default in most desktopManager).
  services.libinput.enable = true;
