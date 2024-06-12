@@ -29,13 +29,26 @@
 
  outputs = {nixpkgs, ...} @ inputs:
  {
-    nixosConfigurations."main-portable" = nixpkgs.lib.nixosSystem {
+    nixosConfigurations."laptop" = nixpkgs.lib.nixosSystem {
       specialArgs = {inherit inputs;};
       modules = [
         inputs.disko.nixosModules.default
         (import ./disko.nix { device = "/dev/nvme0n1"; })
 
-        ./cores/main-portable.nix
+        ./cores/laptop.nix
+              
+        inputs.stylix.nixosModules.stylix
+        inputs.home-manager.nixosModules.default
+        inputs.impermanence.nixosModules.impermanence
+      ];
+    };
+     nixosConfigurations."desktop" = nixpkgs.lib.nixosSystem {
+      specialArgs = {inherit inputs;};
+      modules = [
+        inputs.disko.nixosModules.default
+        (import ./disko.nix { device = "/dev/nvme0n1"; })
+
+        ./cores/desktop.nix
               
         inputs.stylix.nixosModules.stylix
         inputs.home-manager.nixosModules.default
