@@ -1,6 +1,6 @@
 { inputs, config, lib, pkgs, ... }:
 {
- imports = [ ./hosts/15s-eq2009ne.nix ];
+ imports = [ ../hosts/15s-eq2009ne.nix ];
 
  # Use the systemd-boot EFI boot loader.
  boot.loader.systemd-boot.enable = true;
@@ -72,12 +72,6 @@
 
  services.xserver.windowManager.xmonad.enable = true;
  services.xserver.windowManager.xmonad.enableContribAndExtras = true;
-
- hardware.opengl.enable = true;
- hardware.opengl.driSupport = true;
- hardware.opengl.driSupport32Bit = true;
-  
- services.xserver.videoDrivers = ["amdgpu"];
 
  xdg.portal.enable = true;
  xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
@@ -171,11 +165,6 @@
    "d /presist/home/starry 0700 starry wheel -"
  ];
 
- home-manager.extraSpecialArgs = {inherit inputs;};
- home-manager.users = {
-   "starry" = import ./home/xmonad/default.nix;
- };
- 
  stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-frappe.yaml";
  stylix.image = ./wallpaper.png;
 
@@ -207,6 +196,11 @@
  networking.firewall.allowedTCPPorts = [ 8384 22000 ];
  networking.firewall.allowedUDPPorts = [ 22000 21027 ];
 
+ home-manager.extraSpecialArgs = {inherit inputs;};
+ home-manager.users = {
+   "starry" = import ../home/xmonad/default.nix;
+ };
+ 
  # Copy the NixOS configuration file and link it from the resulting system
  # (/run/current-system/configuration.nix). This is useful in case you
  # accidentally delete configuration.nix.
