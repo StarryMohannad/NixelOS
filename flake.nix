@@ -35,7 +35,7 @@
         inputs.disko.nixosModules.default
         (import ./disko.nix { device = "/dev/nvme0n1"; })
 
-        ./core/main.nix
+        ./cores/main.nix
               
         inputs.stylix.nixosModules.stylix
         inputs.home-manager.nixosModules.default
