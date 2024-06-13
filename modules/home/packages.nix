@@ -49,6 +49,8 @@
    xdotool
 
    xmobar
+  
+   rofi-bluetooth
  ];
 
  programs.mangohud.enable = true;

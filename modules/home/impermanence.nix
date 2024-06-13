@@ -3,18 +3,46 @@
 
 in {
  home.persistence."/persist/home/starry".directories = [
-   "Downloads/persist"
-   "Sync"
-   "Projects"
+   "downloads/persist"
+   "sync"
+   "projects"
 
    ".local/nf"
-   ".local/share"
  ]
- ++ forEach ["syncthing" "Vencord" "obs-studio" "aseprite" "dolphin-emu" "PCSX2" "discord" "gzdoom" "GIMP" "Thunar" "keepassxc"] (
+ ++ forEach [
+      "aseprite" 
+      "discord" 
+      "dolphin-emu" 
+      "GIMP" 
+      "gzdoom" 
+      "keepassxc"
+      "obs-studio"   
+      "PCSX2" 
+      "syncthing" 
+      "Thunar" 
+      "Vencord" [ ( 
       x: ".config/${x}"
- )
+    ) 
+ ++ forEach [ 
+      "crispy-doom"
+      "dolphin-emu"
+      "DoomRunner"
+      "duckstation"
+      "Flatpak"
+      "Games"
+      "kdenlive"
+      "keyrings"
+      "mime"
+      "mpd"
+      "PrismLauncher"
+      "Steam"
+      "Terraria"
+      "zoxide"
+      "zplug"
+      "zsh" ] (
+      x: ".local/share/${x}"
+    )
  ++ [ ".ssh" ".var" ".mozilla" ];
 
  home.persistence."/persist/home/starry".allowOther = true;
 }
-

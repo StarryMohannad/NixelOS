@@ -1,7 +1,7 @@
 { inputs, config, pkgs, ... }:
 
 {
- imports = [ ./impermanence.nix ]
+ imports = [ ./impermanence.nix ];
 
  # Use the systemd-boot EFI boot loader.
  boot.loader.systemd-boot.enable = true;
@@ -9,6 +9,10 @@
 
  networking.hostName = "starframe"; # Define your hostname.
  networking.networkmanager.enable = true;  # Easiest to use and most distros use this by default.
+
+ hardware.bluetooth.enable = true; # enables support for Bluetooth
+ hardware.bluetooth.powerOnBoot = true; # powers up the default Bluetooth controller on boot
+ services.blueman.enable = true;
 
  # Set your time zone.
  time.timeZone = "Asia/Amman";
@@ -62,7 +66,7 @@
  # Themes :DD
  stylix.enable = true;
  stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-frappe.yaml";
- stylix.image = ../wallpaper.png;
+ stylix.image = ../../wallpaper.png;
 
  # Define a user account. Don't forget to set a password with ‘passwd’.
  programs.zsh.enable = true;
