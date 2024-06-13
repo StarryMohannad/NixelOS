@@ -14,6 +14,7 @@
    ../modules/home/packages.nix
    ../modules/home/theme.nix
    ../modules/home/dirs.nix
+   ../modules/home/qemu.nix
 
    ../modules/home/desktop/default.nix
    ../modules/home/programs/default.nix
