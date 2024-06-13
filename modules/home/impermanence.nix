@@ -7,8 +7,9 @@ in {
    "sync"
    "projects"
 
-   ".local/nf"
+   ".local/persist"
    ".local/state/syncthing"
+   ".cache/xmonad"
  ]
  ++ forEach [
       "aseprite" 
@@ -21,7 +22,8 @@ in {
       "PCSX2" 
       "syncthing"
       "Thunar" 
-      "Vencord" ] ( 
+      "Vencord"
+      "xmonad" ] ( 
       x: ".config/${x}"
     ) 
  ++ forEach [ 
@@ -30,7 +32,6 @@ in {
       "DoomRunner"
       "duckstation"
       "Flatpak"
-      "Games"
       "kdenlive"
       "keyrings"
       "mime"

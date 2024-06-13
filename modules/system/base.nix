@@ -81,4 +81,11 @@
    # TODO: replace the password with your password ;)
    hashedPassword="$6$U9CycjFVXgPJZ.pr$ciJPJ6SMSSxGyQyLMUJwa6RaWLypHR3kvKW9.xvncU33.N1QnLEWgOfVhjxpjpBMGx1C.aG6Lzr.bhUxsEEko.";
  };
+
+ nix.settings.auto-optimise-store = true;
+ nix.gc = {
+   automatic = true;
+   dates = "weekly";
+   options = "--delete-older-than 30d";
+ };
 }
