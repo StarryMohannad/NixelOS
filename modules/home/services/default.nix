@@ -2,10 +2,9 @@
 
 {
  imports = [
-   ./mpd.nix
    ./gpg-agent.nix
+   ./mpd.nix
+   ./syncthing.nix
  ];
-
- services.syncthing.enable = true;
 }
 

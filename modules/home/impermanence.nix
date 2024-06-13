@@ -18,7 +18,6 @@ in {
       "keepassxc"
       "obs-studio"   
       "PCSX2" 
-      "syncthing" 
       "Thunar" 
       "Vencord" ] ( 
       x: ".config/${x}"
