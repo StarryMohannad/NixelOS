@@ -1,6 +1,8 @@
 { inputs, config, pkgs, ... }:
 
 {
+ imports = [ ./impermanence.nix ]
+
  # Use the systemd-boot EFI boot loader.
  boot.loader.systemd-boot.enable = true;
  boot.loader.efi.canTouchEfiVariables = true;
@@ -61,4 +63,16 @@
  stylix.enable = true;
  stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-frappe.yaml";
  stylix.image = ../wallpaper.png;
+
+ # Define a user account. Don't forget to set a password with ‘passwd’.
+ programs.zsh.enable = true;
+ users.users."starry" = {
+   isNormalUser = true;
+   description = "StarryMohannad";
+   extraGroups = [ "networkmanager" "wheel" ]; # Enable ‘sudo’ for the user.
+   shell = pkgs.zsh;
+
+   # TODO: replace the password with your password ;)
+   hashedPassword="$6$U9CycjFVXgPJZ.pr$ciJPJ6SMSSxGyQyLMUJwa6RaWLypHR3kvKW9.xvncU33.N1QnLEWgOfVhjxpjpBMGx1C.aG6Lzr.bhUxsEEko.";
+ };
 }

@@ -41,26 +41,9 @@ Config {
         [ Run Weather "RJTT" [ "--template", "<tempC> °C"
                              ] 36000
 
-        -- battery monitor
-        , Run Battery        [ "--template" , "<acstatus>% 󱐋"
-                             , "--Low"      , "10"        -- units: %
-                             , "--High"     , "80"        -- units: %
-                             , "--low"      , "#e78284"
-                             , "--normal"   , "#ef9f76"
-                             , "--high"     , "#a6d189"
-
-                             , "--" -- battery specific options
-                                       -- discharging status
-                                       , "-o"	, "<left>"
-                                       -- AC "on" status
-                                       , "-O"	, "<fc=#fe8019>[C] <left></fc>"
-                                       -- charged status
-                                       , "-i"	, "<fc=#b8bb26>[CC] <left></fc>"
-                             ] 50
-
         -- time and date indicator
         --   (%F = y-m-d date, %a = day of week, %T = h:m:s time)
-        , Run Date           "<fc=#d7dad8>%d/%m/%y 󰃭 | %H:%M </fc>" "date" 10
+        , Run Date           "<fc=#d7dad8>%d/%m/%y %H:%M </fc>" "date" 10
 
         , Run Com ".local/nf/bin/pf-status" ["padding"] "trayerpad" 2
 

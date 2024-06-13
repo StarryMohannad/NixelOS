@@ -9,15 +9,15 @@
  imports = [
    inputs.impermanence.nixosModules.home-manager.impermanence
 
-   ./backend.nix
-   ./impermanence.nix
-   ./packages.nix
-   ./theme.nix
+   ../modules/home/backend.nix
+   ../modules/home/impermanence.nix
+   ../modules/home/packages.nix
+   ../modules/home/theme.nix
 
-   ./desktop/default.nix
-   ./programs/default.nix
-   ./services/default.nix
-   ./shell/default.nix
+   ../modules/home/desktop/default.nix
+   ../modules/home/programs/default.nix
+   ../modules/home/services/default.nix
+   ../modules/home/shell/default.nix
  ];
 
  programs.kitty.enable = true;
@@ -39,12 +39,11 @@
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
  # plain files is through 'home.file'.
  home.file = {
-   ".config/xmonad/xmonad.hs".source = ./files/configs/xmonad.hs;
-   ".config/xmobar.rc".source = ./files/configs/xmobar.rc;
+   ".config/xmonad/xmonad.hs".source = ../../files/configs/xmonad.hs;
+   ".config/xmobar.rc".source = ../../files/configs/xmobar-laptop.rc;
    
-   ".local/share/sounds".source = ./files/sounds;
-   ".local/share/xmonad-data".source = ./files/data;
-   ".local/share/wallpaper.png".source = ../../wallpaper.png;
+   ".local/share/sounds".source = ../../files/sounds;
+   ".local/share/xmonad-data".source = ../../files/data;
  };
 
  xdg.userDirs = {

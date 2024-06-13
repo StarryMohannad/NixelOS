@@ -3,24 +3,11 @@
  imports = [ 
    ../hosts/15s-eq2009ne.nix
 
-   ../modules/base.nix
-   ../modules/displaymanager-fonts.nix
-   ../modules/impermanence.nix
-   ../modules/steam.nix
-   ../modules/xmonad.nix
+   ../modules/system/base.nix
+   ../modules/system/displaymanager-fonts.nix
+   ../modules/system/steam.nix
+   ../modules/system/xmonad.nix
  ];
-
- # Define a user account. Don't forget to set a password with ‘passwd’.
- programs.zsh.enable = true;
- users.users."starry" = {
-   isNormalUser = true;
-   description = "StarryMohannad";
-   extraGroups = [ "networkmanager" "wheel" ]; # Enable ‘sudo’ for the user.
-   shell = pkgs.zsh;
-
-   # TODO: replace the password with your password ;)
-   hashedPassword="$6$U9CycjFVXgPJZ.pr$ciJPJ6SMSSxGyQyLMUJwa6RaWLypHR3kvKW9.xvncU33.N1QnLEWgOfVhjxpjpBMGx1C.aG6Lzr.bhUxsEEko.";
- };
 
  # Some programs need SUID wrappers, can be configured further or are
  # started in user sessions.
@@ -35,7 +22,7 @@
 
  home-manager.extraSpecialArgs = {inherit inputs;};
  home-manager.users = {
-   "starry" = import ../home/xmonad/default.nix;
+   "starry" = import ../home/main.nix;
  };
  
  # Copy the NixOS configuration file and link it from the resulting system
