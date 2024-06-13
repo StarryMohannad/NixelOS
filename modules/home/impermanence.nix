@@ -20,7 +20,7 @@ in {
       "PCSX2" 
       "syncthing" 
       "Thunar" 
-      "Vencord" [ ( 
+      "Vencord" ] ( 
       x: ".config/${x}"
     ) 
  ++ forEach [ 
