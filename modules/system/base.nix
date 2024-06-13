@@ -68,6 +68,8 @@
  stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-frappe.yaml";
  stylix.image = ../../wallpaper.png;
 
+ stylix.cursor.size = 24;
+
  # Define a user account. Don't forget to set a password with ‘passwd’.
  programs.zsh.enable = true;
  users.users."starry" = {
