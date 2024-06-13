@@ -8,6 +8,7 @@ in {
    "projects"
 
    ".local/nf"
+   ".local/state/syncthing"
  ]
  ++ forEach [
       "aseprite" 
