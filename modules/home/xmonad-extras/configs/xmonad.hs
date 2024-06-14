@@ -217,6 +217,7 @@ myEventHook = mempty
 myStartupHook = do
  spawnOnce "xcompmgr &"
  spawnOnce "mpv --no-video ~/.local/share/sounds/startup.mp3 &"
+ spawnOnce "systemctl start --user trayer"
  spawnOnce "keepassxc &"
 
 ------------------------------------------------------------------------
