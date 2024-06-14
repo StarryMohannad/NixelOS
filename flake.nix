@@ -19,7 +19,7 @@
  outputs = {nixpkgs, ...} @ inputs: let
    GlobalModules = [
      inputs.disko.nixosModules.default
-     (import ./disko.nix { device = "/dev/nvme0n1"; })
+     (import ./modules/disko.nix { device = "/dev/nvme0n1"; })
      inputs.stylix.nixosModules.stylix
      inputs.home-manager.nixosModules.default
      inputs.impermanence.nixosModules.impermanence
