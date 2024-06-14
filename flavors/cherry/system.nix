@@ -1,12 +1,12 @@
 { inputs, config, lib, pkgs, ... }:
 {
  imports = [ 
-   ../hosts/15s-eq2009ne.nix
+   ../../hosts/15s-eq2009ne.nix
 
-   ../modules/system/base.nix
-   ../modules/system/displaymanager-fonts.nix
-   ../modules/system/steam.nix
-   ../modules/system/xmonad.nix
+   ../../modules/system/base.nix
+   ../../modules/system/displaymanager-fonts.nix
+   ../../modules/system/steam.nix
+   ../../modules/system/xmonad.nix
  ];
 
  # Some programs need SUID wrappers, can be configured further or are
@@ -22,7 +22,7 @@
 
  home-manager.extraSpecialArgs = {inherit inputs;};
  home-manager.users = {
-   "starry" = import ../home/main.nix;
+   "starry" = import ../home.nix;
  };
  
  # Copy the NixOS configuration file and link it from the resulting system

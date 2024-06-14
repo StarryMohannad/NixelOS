@@ -9,16 +9,16 @@
  imports = [
    inputs.impermanence.nixosModules.home-manager.impermanence
 
-   ../modules/home/backend.nix
-   ../modules/home/impermanence.nix
-   ../modules/home/packages.nix
-   ../modules/home/theme.nix
-   ../modules/home/dirs.nix
+   ../../modules/home/backend.nix
+   ../../modules/home/impermanence.nix
+   ../../modules/home/packages.nix
+   ../../modules/home/theme.nix
+   ../../modules/home/dirs.nix
 
-   ../modules/home/desktop/default.nix
-   ../modules/home/programs/default.nix
-   ../modules/home/services/default.nix
-   ../modules/home/shell/default.nix
+   ../../modules/home/desktop/default.nix
+   ../../modules/home/programs/default.nix
+   ../../modules/home/services/default.nix
+   ../../modules/home/shell/default.nix
  ];
 
  programs.kitty.enable = true;
@@ -40,12 +40,12 @@
  # Home Manager is pretty good at managing dotfiles. The primary way to manage
  # plain files is through 'home.file'.
  home.file = {
-   ".config/xmonad/xmonad.hs".source = ../files/configs/xmonad.hs;
-   ".config/xmobar.rc".source = ../files/configs/xmobar.rc;
+   ".config/xmonad/xmonad.hs".source = ../../files/configs/xmonad.hs;
+   ".config/xmobar.rc".source = ../../files/configs/xmobar.rc;
    
-   ".local/share/sounds".source = ../files/sounds;
-   ".local/share/xmonad-data".source = ../files/data;
-   ".local/share/scripts".source = ../bin;
+   ".local/share/sounds".source = ../../files/sounds;
+   ".local/share/xmonad-data".source = ../../files/data;
+   ".local/share/scripts".source = ../../bin;
  };
 
  # Let Home Manager install and manage itself.
