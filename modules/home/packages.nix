@@ -51,6 +51,7 @@
    xmobar
   
    rofi-bluetooth
+   scrcpy
  ];
 
  programs.mangohud.enable = true;

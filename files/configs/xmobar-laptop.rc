@@ -62,11 +62,11 @@ Config {
         --   (%F = y-m-d date, %a = day of week, %T = h:m:s time)
         , Run Date           "<fc=#d7dad8>%d/%m/%y %H:%M </fc>" "date" 10
 
-        , Run Com ".local/nf/bin/pf-status" ["padding"] "trayerpad" 2
+        , Run Com ".local/share/scripts/pf-status" ["padding"] "trayerpad" 2
 
-        , Run Com ".local/nf/bin/pf-status" ["music"] "music" 10
+        , Run Com ".local/share/scripts/pf-status" ["music"] "music" 10
 
-        , Run Com ".local/nf/bin/pf-status" ["weather"] "weather" 50
+        , Run Com ".local/share/scripts/pf-status" ["weather"] "weather" 50
 
         -- keyboard layout indicator
         , Run Kbd            [ ("ara"        , "<fc=#a6d189>ar</fc>")

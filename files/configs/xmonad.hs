@@ -65,7 +65,7 @@ myFocusedBorderColor = "#504945"
 myModMask       = mod4Mask
 
 -- Command Prefixes
-myExecFolder = "~/.local/nf/bin/"
+myExecFolder = "~/.local/share/scripts/"
 myOpenSfx    = "setsid -f mpv --no-video ~/.local/share/sounds/open.mp3; "
 myMenuSfx    = "setsid -f mpv --no-video ~/.local/share/sounds/menu.open.mp3; "
 
@@ -96,8 +96,8 @@ myKeys = \c -> mkKeymap c $
  , ("<Print>", spawn (myExecFolder <+> "pf-screenshot rectangle"))
  , ("M-S-p", spawn "loginctl lock-session") -- Locks the Screen
 
- , ("M-.", spawn "~/.local/nf/bin/pf-emoji")
- , ("M-,", spawn "~/.local/nf/bin/pf-kaomoji")
+ , ("M-.", spawn (myExecFolder <+> "pf-emoji"))
+ , ("M-,", spawn (myExecFolder <+> "pf-kaomoji"))
  , ("M-o", spawn "keepmenu &")
 
  , ("M-d c b", spawn "rofi-bluetooth")

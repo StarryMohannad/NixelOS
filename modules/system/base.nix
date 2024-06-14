@@ -92,7 +92,7 @@
  users.users."starry" = {
    isNormalUser = true;
    description = "StarryMohannad";
-   extraGroups = [ "networkmanager" "wheel" ]; # Enable ‘sudo’ for the user.
+   extraGroups = [ "adbusers" "networkmanager" "wheel" ]; # Enable ‘sudo’ for the user.
    shell = pkgs.zsh;
 
    # TODO: replace the password with your password ;)
@@ -105,4 +105,6 @@
    dates = "weekly";
    options = "--delete-older-than 30d";
  };
+ 
+ programs.adb.enable = true;
 }
