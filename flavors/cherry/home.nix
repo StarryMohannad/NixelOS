@@ -19,7 +19,7 @@
    ../../modules/home/programs/default.nix
    ../../modules/home/services/default.nix
    ../../modules/home/shell/default.nix
-   ../../modules/home/xmonad-extras/default.nix
+   ../../modules/home/xmonad/default.nix
  ];
 
  programs.kitty.enable = true;
