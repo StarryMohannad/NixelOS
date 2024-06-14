@@ -13,5 +13,5 @@
 
  # Home Manager is pretty good at managing dotfiles. The primary way to manage
  # plain files is through 'home.file'.
- home.file.".config/xmobar.rc".source = lib.mkForce ../../files/configs/xmobar-laptop.rc;
+ home.file.".config/xmobar.rc".source = lib.mkForce ../../modules/home/xmonad-extras/configs/xmobar-laptop.rc;
 }
