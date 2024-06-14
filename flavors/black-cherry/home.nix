@@ -6,7 +6,7 @@
  #home.username = "starry";
  #home.homeDirectory = "/home/starry";
 
- imports = [ ../cherry/main.nix ];
+ imports = [ ../cherry/home.nix ];
 
  # The home.packages option allows you to install Nix packages into your
  # environment.

@@ -9,6 +9,6 @@
  services.libinput.enable = true;
 
  home-manager.users = lib.mkForce {
-   "starry" = import ../home.nix;
+   "starry" = import ./home.nix;
  };
 }
