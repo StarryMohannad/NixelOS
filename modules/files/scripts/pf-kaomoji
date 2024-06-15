@@ -10,7 +10,7 @@
 
 setsid -f mpv --no-video ~/.local/share/sounds/menu.open.mp3
 
-chosen=$(rofi -dmenu -window-title kaomoji < ~/.local/share/xmonad-data/kaomoji.txt)
+chosen=$(rofi -dmenu -window-title kaomoji < ~/.local/share/kaomoji)
 
 #[ "$chosen" != "" ] || exit
 # The != is a little redundant, just placing the variable itself will check if its non-empty.
