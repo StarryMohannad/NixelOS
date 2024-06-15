@@ -19,7 +19,8 @@
    ../../modules/home/programs/default.nix
    ../../modules/home/services/default.nix
    ../../modules/home/shell/default.nix
-   ../../modules/home/xmonad/default.nix
+   # ../../modules/home/xmonad/default.nix
+   ../../modules/home/hyprland.nix
  ];
 
  programs.kitty.enable = true;
