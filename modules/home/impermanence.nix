@@ -9,7 +9,6 @@ in {
 
    ".local/persist"
    ".local/state/syncthing"
-   ".cache/xmonad"
  ]
  ++ forEach [
       "aseprite" 
@@ -22,8 +21,7 @@ in {
       "PCSX2" 
       "syncthing"
       "Thunar" 
-      "Vencord"
-      "xmonad" ] ( 
+      "Vencord" ] ( 
       x: ".config/${x}"
     ) 
  ++ forEach [ 
