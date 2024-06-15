@@ -6,7 +6,8 @@
    ../../modules/system/base.nix
    ../../modules/system/displaymanager-fonts.nix
    ../../modules/system/steam.nix
-   ../../modules/system/xmonad.nix
+   # ../../modules/system/xmonad.nix
+   ../../modules/system/hyprland.nix
  ];
 
  # Some programs need SUID wrappers, can be configured further or are
