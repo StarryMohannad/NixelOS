@@ -22,7 +22,7 @@ chosen=$(rofi -dmenu -window-title kaomoji < ~/.local/share/kaomoji)
 if [ "$1" ]; then
 	xdotool key Shift+Insert
 else
-	printf '%s' "${chosen% *}" | xclip -selection clipboard
+	printf '%s' "${chosen% *}" | wl-copy
 	notify-send "'${chosen% *}' copied to clipboard." &
 fi
 

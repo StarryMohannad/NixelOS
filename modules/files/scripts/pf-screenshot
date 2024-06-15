@@ -5,14 +5,13 @@ FileDate="$(date '+%Y%m%d%H%M%S')"
 setsid -f mpv --no-video ~/.local/share/sounds/menu.open.mp3
 
 if [ "$1" == "rectangle" ] ; then
-	shotgun -f png -g "$(hacksaw)" ~/sync/pics/screenshots/"$FileDate".png
+	grim -g "$(slurp)" ~/sync/pics/screenshots/"$FileDate".png
 elif [ "$1" == "fullscreen" ] ; then
-	shotgun -f png -s ~/sync/pics/screenshots/"$FileDate".png
+	shotgun -o ~/sync/pics/screenshots/"$FileDate".png
 else
     echo "No File Type specified"
     return 1
 fi
 
-xclip -selection clipboard -t image/png -i ~/sync/pics/screenshots/"$FileDate".png
 setsid -f mpv --no-video ~/.local/share/sounds/screenshot.mp3
-notify-send "Screenshot taken" "'$FileDate'.png is now in the clipboard"
+setsid -f swappy -f ~/sync/pics/screenshots/"$FileDate".png

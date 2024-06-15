@@ -40,18 +40,16 @@
 
    dconf
    syncthing
-   xclip
-   xsel
+   wl-clipboard
 
-   gxmessage
-   xwallpaper
-   xcompmgr
-   xdotool
-
-   xmobar
-  
    rofi-bluetooth
    scrcpy
+
+   grim
+   slurp   
+   swappy
+
+   hyprpaper
  ];
 
  programs.mangohud.enable = true;

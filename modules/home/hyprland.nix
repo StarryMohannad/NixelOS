@@ -10,18 +10,18 @@
  programs.waybar.enable = true;
  programs.waybar.style = builtins.readFile(../files/configs/waybar.css);
  programs.waybar.settings= [{
-   height = 1;
+   height = 15;
    modules-left = [ "hyprland/workspaces" ]; 
    modules-center = [ "mpd" ];
    modules-right = [
      "battery"
      "clock"
-     "|"
      "tray"
    ];
    battery = {
+     interval = 5;
      format = "{capacity}% {icon}";
-     format-charging = "{capacity}%  ";
+     format-charging = "{capacity}%  |";
      format-icons = [ " " " " " " " " " " ];
      format-plugged = "{capacity}% ";
      states = {
@@ -30,10 +30,12 @@
      };
    };
    clock = {
-     format = "{:%H:%M}  ";
+     interval = 5;
+     format = "{:%H:%M}   | ";
      tooltip-format = "{:%Y-%m-%d %A}";
    };
    mpd = {
+     interval = 5;
      format = "  {artist} - {title}";
      format-disconnected = "  Offline";
      format-stopped = "  Stopped"; 
@@ -44,5 +46,7 @@
  home.file.".local/share/sounds".source = ../files/sounds;
  home.file.".local/share/scripts".source = ../files/scripts;
  home.file.".local/share/kaomoji".source = ../files/kaomoji;
+
+ home.file.".local/share/wallpaper.png".source = ../files/wallpaper.png;
 
 }
