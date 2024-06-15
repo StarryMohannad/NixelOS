@@ -9,8 +9,8 @@
  programs.rofi.package = pkgs.rofi-wayland;
  programs.waybar.enable = true;
 
- home.files."~/.local/share/sounds".source = ../files/sounds;
- home.files."~/.local/share/scripts".source = ../files/scripts;
+ # home.file."~/.local/share/sounds".source = ../files/sounds;
+ # home.file."~/.local/share/scripts".source = ../files/scripts;
 
  wayland.windowManager.hyprland.extraConfig = ''
    monitor=eDP-1,1920x1080@60,0x0,1
