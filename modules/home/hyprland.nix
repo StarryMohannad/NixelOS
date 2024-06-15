@@ -13,5 +13,5 @@
  home.file.".local/share/scripts".source = ../files/scripts;
  home.file.".local/share/kaomoji".source = ../files/kaomoji;
 
- wayland.windowManager.hyprland.extraConfig = builtins.readfile(./hypr.conf);
+ wayland.windowManager.hyprland.extraConfig = builtins.readFile(../files/hypr.conf);
 }
