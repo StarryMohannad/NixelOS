@@ -7,7 +7,7 @@ setsid -f mpv --no-video ~/.local/share/sounds/menu.open.mp3
 if [ "$1" == "rectangle" ] ; then
 	grim -g "$(slurp)" ~/sync/pics/screenshots/"$FileDate".png
 elif [ "$1" == "fullscreen" ] ; then
-	shotgun -o ~/sync/pics/screenshots/"$FileDate".png
+	grim -o ~/sync/pics/screenshots/"$FileDate".png
 else
     echo "No File Type specified"
     return 1
