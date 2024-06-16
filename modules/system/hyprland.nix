@@ -1,11 +1,9 @@
 { config, pkgs, ... }:
 
 {
- services.xserver.enable = true;
-
- # LightDM as the Display Manager
- services.xserver.displayManager.lightdm.enable = true;
- services.xserver.displayManager.lightdm.extraConfig = ''user-authority-in-system-dir = true'';
+ # SDDM as the Display Manager
+ services.displayManager.sddm.enable = true;
+ services.displayManager.sddm.wayland.enable = true;
 
  programs.hyprland.enable = true;
  programs.hyprland.xwayland.enable = true;
