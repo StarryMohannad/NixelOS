@@ -16,16 +16,16 @@
    modules-left = [ "hyprland/workspaces" ]; 
    modules-center = [ "mpd" ];
    modules-right = [
+     "custom/weather"
      "battery"
      "clock"
      "tray"
    ];
    battery = {
      interval = 5;
-     format = "{capacity}% {icon}";
+     format = "{capacity}% {icon}|";
      format-charging = "{capacity}%  |";
      format-icons = [ " " " " " " " " " " ];
-     format-plugged = "{capacity}% ";
      states = {
        critical = 15;
        warning = 30;
@@ -33,7 +33,7 @@
    };
    clock = {
      interval = 5;
-     format = "{:%H:%M}   | ";
+     format = "{:%H:%M}  | ";
      tooltip-format = "{:%Y-%m-%d %A}";
    };
    mpd = {
@@ -42,6 +42,13 @@
      format-disconnected = "  Offline";
      format-stopped = "  Stopped"; 
      format-paused = "  Paused";
+   };
+   "custom/weather" = {
+     format = "{}|";
+     tooltip = true;
+     interval = 10;
+     exec = "wttrbar --custom-indicator '{temp_C}° {ICON}'";
+     return-type = "json";
    };
  }];
  programs.waybar.style = ''

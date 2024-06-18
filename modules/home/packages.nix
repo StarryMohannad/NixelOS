@@ -48,6 +48,8 @@
    grim
    slurp   
    swappy
+
+   wttrbar
  ];
 
  programs.mangohud.enable = true;
