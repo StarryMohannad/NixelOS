@@ -27,8 +27,8 @@
    clh = "rm -rf $ZSH/zshistory";
    cld = "rm -rf $HOME/Downloads/*.*";
 
+   cd = "z";
    wget = "wget --hsts-file='$XDG_DATA_HOME/wget-hsts'";
-   nixos-update = "sudo nixos-rebuild --upgrade --flake ~/.local/nf/system/$Nixel && home-manager switch";
  };
 
  programs.zsh.zplug = {
