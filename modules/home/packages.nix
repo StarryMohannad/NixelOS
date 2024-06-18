@@ -18,12 +18,12 @@
    screenfetch
 
    brightnessctl
-   hacksaw
    pamixer
-   shotgun
+   mpc-cli
+   neofetch
 
    mpv
-   nsxiv
+   nomacs
    xfce.thunar
    zathura
 
@@ -48,8 +48,6 @@
    grim
    slurp   
    swappy
-
-   hyprpaper
  ];
 
  programs.mangohud.enable = true;

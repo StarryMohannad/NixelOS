@@ -5,6 +5,10 @@
  wayland.windowManager.hyprland.enable = true;
  wayland.windowManager.hyprland.xwayland.enable = true;
 
+ wayland.windowManager.hyprland.settings.general = {
+   border_size = 3;
+ };
+
  # Waybar (top bar)
  programs.waybar.enable = true;
  programs.waybar.settings= [{

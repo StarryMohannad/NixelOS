@@ -9,6 +9,7 @@ in {
 
    ".local/persist"
    ".local/state/syncthing"
+   ".cache/flatpak"
  ]
  ++ forEach [
       "aseprite" 
@@ -29,7 +30,7 @@ in {
       "dolphin-emu"
       "DoomRunner"
       "duckstation"
-      "Flatpak"
+      "flatpak"
       "kdenlive"
       "keyrings"
       "mime"
