@@ -5,7 +5,7 @@
 
    ../../modules/system/base.nix
    ../../modules/system/displaymanager-fonts.nix
-   # ../../modules/system/steam.nix
+   ../../modules/system/virtualisation.nix
    ../../modules/system/hyprland.nix
  ];
 
