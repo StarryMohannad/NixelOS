@@ -9,7 +9,8 @@ else
 fi
 
 Brightness=$(( $(brightnessctl g) * 100 / $(brightnessctl m) ))
-notify-send "Brightness: $Brightness%""     " -t 2000 -h int:value:"$Brightness" --replace-id=555
+notify-send -h string:x-canonical-private-synchronous:sys-notify -h int:value:"$Brightness" -t 2000 "Brightness: $Brightness%"
+
 
 if [ $Brightness == 0 ] ; then
  echo "Don't Play Sound"

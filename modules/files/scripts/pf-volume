@@ -14,9 +14,9 @@ fi
 
 Volume="$(pamixer --get-volume)"
 if [ "$(pamixer --get-mute)" == "true" ] ; then
- notify-send --replace-id=555 -u normal "Volume: [M]" -t 2000 -h int:value:"0"
+ notify-send -h string:x-canonical-private-synchronous:sys-notify -h int:value:"0" -t 2000 "Volume: [M]"
 else
- notify-send "Volume: $Volume%""     " -t 2000 -h int:value:"$Volume" --replace-id=555
+ notify-send -h string:x-canonical-private-synchronous:sys-notify -h int:value:"$Volume" -t 2000 "Volume: $Volume%"
 fi
 
 if [ $Volume == 0 ] ; then
