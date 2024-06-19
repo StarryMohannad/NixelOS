@@ -1,5 +1,5 @@
 #!/bin/sh
 
 setsid -f mpv --no-video ~/.local/share/sounds/menu.open.mp3
-rofi -modi emoji -show emoji -kb-custom-1 Ctrl+c
+wofi-emoji
 setsid -f mpv --no-video ~/.local/share/sounds/menu.close.mp3

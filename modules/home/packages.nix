@@ -50,6 +50,7 @@
    swappy
 
    wttrbar
+   wofi-emoji
  ];
 
  programs.mangohud.enable = true;
