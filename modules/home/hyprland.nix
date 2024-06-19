@@ -187,6 +187,10 @@
  programs.hyprlock.settings.input-field.outline_thickness = 5;
  programs.hyprlock.settings.input-field.shadow_passes = 2;
 
+ # Etc...
+ services.mako.enable = true;
+ programs.wofi.enable = true;
+
  # Sourcing Files
  home.file.".local/share/sounds".source = ../files/sounds;
  home.file.".local/share/scripts".source = ../files/scripts;

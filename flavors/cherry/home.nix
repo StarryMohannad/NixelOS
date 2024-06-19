@@ -15,7 +15,6 @@
    ../../modules/home/theme.nix
    ../../modules/home/dirs.nix
 
-   ../../modules/home/desktop/default.nix
    ../../modules/home/programs/default.nix
    ../../modules/home/services/default.nix
    ../../modules/home/shell/default.nix
