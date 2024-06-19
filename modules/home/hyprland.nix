@@ -27,12 +27,12 @@
    "$modkey, comma, exec, ~/.local/share/scripts/pf-kaomoji"
  ] ++
  [
-   ", XF86AudioRaiseVolume, exec, ~/.local/share/pf-volume up"
-   ", XF86AudioLowerVolume, exec, ~/.local/share/pf-volume down"
-   ", XF86AudioMute, exec, ~/.local/share/pf-volume mute"
+   ", XF86AudioRaiseVolume, exec, ~/.local/share/scripts/pf-volume up"
+   ", XF86AudioLowerVolume, exec, ~/.local/share/scripts/pf-volume down"
+   ", XF86AudioMute, exec, ~/.local/share/scripts/pf-volume mute"
 
-   ", XF86MonBrightnessUp, exec, ~/.local/share/pf-brightness up"
-   ", XF86MonBrightnessDown, exec, ~/.local/share/pf-brightness down"
+   ", XF86MonBrightnessUp, exec, ~/.local/share/scripts/pf-brightness up"
+   ", XF86MonBrightnessDown, exec, ~/.local/share/scripts/pf-brightness down"
  ] ++
  [
    "$Smodkey, c, killactive"
