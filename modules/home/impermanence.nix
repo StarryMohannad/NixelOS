@@ -3,9 +3,9 @@
 
 in {
  home.persistence."/persist/home/starry".directories = [
-   "downloads/persist"
+   "dl/persist"
    "sync"
-   "projects"
+   "proj"
 
    ".local/persist"
    ".local/state/syncthing"
