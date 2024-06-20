@@ -50,6 +50,7 @@
 
    wttrbar
    wofi-emoji
+   betterdiscordctl
  ];
 
  programs.mangohud.enable = true;
