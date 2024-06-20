@@ -13,7 +13,7 @@
    pictures = "${config.home.homeDirectory}/sync/pics";
    videos = "${config.home.homeDirectory}/sync/vids";
 
-   download = "${config.home.homeDirectory}/dls";
+   download = "${config.home.homeDirectory}/dl";
  };
 
  # Home Manager can also manage your environment variables through
