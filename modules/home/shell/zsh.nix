@@ -27,6 +27,7 @@
    clh = "rm -rf $ZSH/zshistory";
    cld = "rm -rf $HOME/Downloads/*.*";
 
+   c = "z";
    cd = "z";
    wget = "wget --hsts-file='$XDG_DATA_HOME/wget-hsts'";
  };

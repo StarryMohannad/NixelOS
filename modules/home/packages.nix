@@ -16,8 +16,6 @@
    pfetch
    screenfetch
 
-   brightnessctl
-   pamixer
    mpc-cli
    neofetch
 
@@ -39,17 +37,9 @@
 
    dconf
    syncthing
-   wl-clipboard
 
    rofi-bluetooth
    scrcpy
-
-   grim
-   slurp   
-   swappy
-
-   wttrbar
-   wofi-emoji
    betterdiscordctl
  ];
 
