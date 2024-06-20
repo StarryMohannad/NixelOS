@@ -8,7 +8,6 @@
    kdenlive
    obs-studio
 
-   (discord.override { withVencord = true; })
    keepassxc
 
    mpc-cli
