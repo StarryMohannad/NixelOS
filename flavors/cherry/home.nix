@@ -8,17 +8,19 @@
 
  imports = [
    inputs.impermanence.nixosModules.home-manager.impermanence
+   ../../modules/home/impermanence.nix
+
+   ../../modules/home/dev-utils/default.nix
+   ../../modules/home/games/default.nix
+   ../../modules/home/hyprland/default.nix
+   ../../modules/home/shell/default.nix
 
    ../../modules/home/backend.nix
-   ../../modules/home/impermanence.nix
    ../../modules/home/packages.nix
    ../../modules/home/theme.nix
    ../../modules/home/dirs.nix
 
    ../../modules/home/programs/default.nix
-   ../../modules/home/services/default.nix
-   ../../modules/home/shell/default.nix
-   ../../modules/home/hyprland/default.nix
  ];
 
  programs.kitty.enable = true;

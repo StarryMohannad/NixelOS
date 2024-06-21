@@ -24,14 +24,6 @@
    xfce.thunar
    zathura
 
-   crispy-doom
-   dolphin-emu
-   doomrunner
-   duckstation
-   gzdoom
-   pcsx2
-   prismlauncher
-
    (nerdfonts.override { fonts = [ "FiraCode" ]; })
    kawkab-mono-font
 
@@ -42,6 +34,4 @@
    scrcpy
    betterdiscordctl
  ];
-
- programs.mangohud.enable = true;
 }

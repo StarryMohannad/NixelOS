@@ -10,7 +10,6 @@ elif [ "$1" == "fullscreen" ] ; then
  grim ~/sync/pics/screenshots/"$FileDate".png
 else
  echo "No File Type specified"
- return 1
 fi
 
 setsid -f mpv --no-video ~/.local/share/sounds/screenshot.mp3

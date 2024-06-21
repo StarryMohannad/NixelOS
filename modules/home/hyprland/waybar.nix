@@ -1,6 +1,8 @@
 { config, pkgs, ... }:
 
 {
+ description = "Status bar for hyprland";
+
  # Enable Status Bar
  programs.waybar.enable = true;
  

@@ -1,6 +1,8 @@
 { pkgs, config, builitins, lib, ... }:
 
 {
+ description = "the Hyprland Window Manager will all of it's glorry";
+
  imports = [
    ./hypr.nix
    ./waybar.nix

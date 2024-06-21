@@ -1,6 +1,8 @@
 { config, pkgs, ... }:
 
 {
+ description = "Window Manager Config";
+
  # Enable Window Manager
  wayland.windowManager.hyprland.enable = true;
 
@@ -37,6 +39,10 @@
 
    ", XF86MonBrightnessUp, exec, ~/.local/share/scripts/pf-brightness up"
    ", XF86MonBrightnessDown, exec, ~/.local/share/scripts/pf-brightness down"
+ ] ++
+ [
+   "$modkey, print, exec, ~/.local/share/scripts/pf-screenshot fullscreen"
+   ", print, exec, ~/.local/share/scripts/pf-screenshot rectangle"
  ] ++
  [
    "$Smodkey, c, killactive"
