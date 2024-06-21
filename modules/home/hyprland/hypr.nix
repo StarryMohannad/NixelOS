@@ -1,8 +1,6 @@
 { config, pkgs, ... }:
 
 {
- description = "Window Manager Config";
-
  # Enable Window Manager
  wayland.windowManager.hyprland.enable = true;
 

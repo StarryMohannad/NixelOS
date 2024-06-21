@@ -1,8 +1,6 @@
 { config, pkgs, ... }:
 
 {
- description = "GPG for Commit Verification";
-
  programs.gpg.enable = true;
  services.gpg-agent.enable = true;
 

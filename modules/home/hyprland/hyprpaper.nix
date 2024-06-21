@@ -1,8 +1,6 @@
 { config, pkgs, ... }:
 
 {
- description = "the Wallpaper Daemon";
-
  # Enable Wallpaper 
  services.hyprpaper.enable = true;
  

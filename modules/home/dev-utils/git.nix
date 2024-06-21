@@ -1,8 +1,6 @@
 { config, pkgs, ... }:
 
 {
- description = "Git Version Control";
-
  programs.git.enable = true;
  programs.git.userName = "StarryMohannad :D";
  programs.git.userEmail = "73769579+StarryMohannad@users.noreply.github.com";

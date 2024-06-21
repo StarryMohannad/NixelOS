@@ -1,8 +1,6 @@
 { config, pkgs, ... }:
 
 {
- description = "Lock Screen Config";
- 
  # Enable Lock Screen
  programs.hyprlock.enable = true;
 

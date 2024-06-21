@@ -1,7 +1,7 @@
 { config, pkgs, ... }:
 
 {
- config.home.packages = [
+ config.home.packages = with pkgs; [
    dolphin-emu
    duckstation
    pcsx2
