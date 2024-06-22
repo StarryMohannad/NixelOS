@@ -117,6 +117,8 @@
    dates = "weekly";
    options = "--delete-older-than 30d";
  };
+
+ nix.settings.experimental-features = [ "nix-command" "flakes"  ]; 
  
  programs.adb.enable = true;
 }
