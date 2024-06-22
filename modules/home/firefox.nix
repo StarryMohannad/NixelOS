@@ -109,5 +109,5 @@
    "webgl.disabled" = false;
  };
 
-
+ stylix.targets.firefox.profileNames = ["starry"];
 }

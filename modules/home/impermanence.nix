@@ -2,25 +2,18 @@
 
 {
  home.persistence."/persist/home/starry".directories = [
-   "dl/persist"
-   "sync"
-   "proj"
-
    ".local/persist"
    ".local/state/syncthing"
    ".cache/flatpak"
  ]
  ++ lib.forEach [
      "keepassxc"
-     "syncthing"
-     "Thunar" ] ( 
+     "syncthing" ] ( 
       x: ".config/${x}"
     ) 
  ++ lib.forEach [ 
       "flatpak"
-      "keyrings"
-      "mime"
-      "mpd" ] (
+      "keyrings" ] (
       x: ".local/share/${x}"
     )
  ++ [ ".var" ".mozilla" ];

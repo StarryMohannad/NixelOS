@@ -6,7 +6,7 @@
 
  xdg.mimeApps.defaultApplications = {
    "applications/pdf" = [ "zathura.desktop" ];
-   "image/*"          = [ "nsxiv.desktop" ];
+   "image/*"          = [ "nomacs.desktop" ];
    "video/*"          = [ "mpv.desktop" ];
  };
 }

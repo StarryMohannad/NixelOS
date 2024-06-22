@@ -10,21 +10,20 @@
    inputs.impermanence.nixosModules.home-manager.impermanence
    ../../modules/home/impermanence.nix
 
+   ../../modules/home/basic-desktop/default.nix
    ../../modules/home/dev/default.nix
    ../../modules/home/games/default.nix
    ../../modules/home/hyprland/default.nix
    ../../modules/home/multimedia/default.nix
    ../../modules/home/shell/default.nix
 
-   ../../modules/home/backend.nix
+   ../../modules/home/firefox.nix
+   ../../modules/home/session-varibles.nix
+   ../../modules/home/syncthing.nix
+
    ../../modules/home/packages.nix
    ../../modules/home/theme.nix
-   ../../modules/home/dirs.nix
-
-   ../../modules/home/programs/default.nix
  ];
-
- programs.kitty.enable = true;
 
  # This value determines the Home Manager release that your configuration is
  # compatible with. This helps avoid breakage when a new Home Manager release
@@ -37,8 +36,6 @@
 
  # The home.packages option allows you to install Nix packages into your
  # environment.
-
- stylix.targets.firefox.profileNames = ["starry"];
 
  # Let Home Manager install and manage itself.
  programs.home-manager.enable = true;
