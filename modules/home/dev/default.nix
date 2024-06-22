@@ -2,6 +2,7 @@
 
 {
  imports = [
+   ./impermanence.nix
    ./git.nix
    ./gpg.nix
  ];
