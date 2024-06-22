@@ -2,6 +2,9 @@
  description = "NixelOS Flake :DD";
      
  inputs = {
+   arkenfox.url = "git+https://github.com/dwarfmaster/arkenfox-nixos?ref=main";
+   arkenfox.inputs.nixpkgs.follows = "nixpkgs";
+
    disko.inputs.nixpkgs.follows = "nixpkgs";
    disko.url = "github:nix-community/disko";
 
