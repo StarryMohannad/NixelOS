@@ -1,17 +1,11 @@
-{ config, lib, ... }:
+{ config, ... }:
 
 {
- config.home.persistence."/persist/home/starry".directories = [] ++
-   lib.forEach [
-     "aseprite" 
-     "obs-studio"   
-     "GIMP"
-   ] (
-     x: ".config/${x}"
-   )
-   lib.forEach [
-     "kdenlive"
-   ] (
-     x: ".local/share/${x}"
-   );
+ config.home.persistence."/persist/home/starry".directories = [
+   ".config/aseprite" 
+   ".config/obs-studio"   
+   ".config/GIMP"
+
+   ".local/share/kdenlive"
+ ];
 }

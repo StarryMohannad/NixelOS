@@ -6,5 +6,5 @@
    gimp
    kdenlive
    obs-studio
- ]
+ ];
 }
