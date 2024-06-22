@@ -14,6 +14,7 @@
    ../../modules/home/dev/default.nix
    ../../modules/home/games/default.nix
    ../../modules/home/multimedia/default.nix
+   ../../modules/home/nixvim/default.nix
    ../../modules/home/shell/default.nix
 
    ../../modules/home/firefox/default.nix
