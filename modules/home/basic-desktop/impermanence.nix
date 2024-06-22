@@ -7,8 +7,8 @@
    "proj"
   
    ".config/Thunar"
-   ".config.nomacs"
+   ".config/nomacs"
   
-   "mpd"
- ]
+   ".local/share/mpd"
+ ];
 }

@@ -13,7 +13,6 @@
    ../../modules/home/basic-desktop/default.nix
    ../../modules/home/dev/default.nix
    ../../modules/home/games/default.nix
-   ../../modules/home/hyprland/default.nix
    ../../modules/home/multimedia/default.nix
    ../../modules/home/shell/default.nix
 

@@ -1,16 +1,16 @@
 { inputs, config, pkgs, ... }:
 
 {
- xdg.userDir.senable = true;
+ xdg.userDirs.enable = true;
 
- xdg.userDir.desktop = "${config.home.homeDirectory}/.local/Desktop";
- xdg.userDir.publicShare = "${config.home.homeDirectory}/.local/Public";
- xdg.userDir.templates = "${config.home.homeDirectory}/.local/Templates";
+ xdg.userDirs.desktop = "${config.home.homeDirectory}/.local/Desktop";
+ xdg.userDirs.publicShare = "${config.home.homeDirectory}/.local/Public";
+ xdg.userDirs.templates = "${config.home.homeDirectory}/.local/Templates";
 
- xdg.userDir.documents = "${config.home.homeDirectory}/sync/docs";
- xdg.userDir.music = "${config.home.homeDirectory}/sync/mus";
- xdg.userDir.pictures = "${config.home.homeDirectory}/sync/pics";
- xdg.userDir.videos = "${config.home.homeDirectory}/sync/vids";
+ xdg.userDirs.documents = "${config.home.homeDirectory}/sync/docs";
+ xdg.userDirs.music = "${config.home.homeDirectory}/sync/mus";
+ xdg.userDirs.pictures = "${config.home.homeDirectory}/sync/pics";
+ xdg.userDirs.videos = "${config.home.homeDirectory}/sync/vids";
 
- xdg.userDir.download = "${config.home.homeDirectory}/dl";
+ xdg.userDirs.download = "${config.home.homeDirectory}/dl";
 }

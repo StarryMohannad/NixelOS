@@ -9,5 +9,7 @@
   ./mpd.nix
   ./ncmpcpp.nix
   ./packages.nix
+ 
+  ../hyprland/default.nix
  ];
 }
