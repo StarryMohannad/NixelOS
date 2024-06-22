@@ -25,10 +25,10 @@
    "2700".enable = true;
    "2800" = {
      enable = true;
-     "2815"."privacy.clearOnShutdown.cookies".enable = true;
-     "2815"."privacy.clearOnShutdown.offlineApps".enable = true;
-     "2815"."privacy.clearOnShutdown.sessions".enable = true;
-     "2815"."privacy.clearOnShutdown_v2.cookiesAndStorage".enable = true;
+     "2815"."privacy.clearOnShutdown.cookies".value = 0;
+     "2815"."privacy.clearOnShutdown.offlineApps".value = 0;
+     "2815"."privacy.clearOnShutdown.sessions".value = 0;
+     "2815"."privacy.clearOnShutdown_v2.cookiesAndStorage".value = 0;
    };
    "4000".enable = true;
    "4500".enable = true;
