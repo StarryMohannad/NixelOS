@@ -2,8 +2,7 @@
 
 {
  imports = [
-   ./externsions.nix
-   ./config.nix
+   ./extensions.nix
  ];
 
  programs.firefox.enable = true;
