@@ -5,6 +5,7 @@
    ".local/persist"
    ".local/state/syncthing"
    ".cache/flatpak"
+   ".cache/keepassxc"
  ]
  ++ lib.forEach [
      "keepassxc"
