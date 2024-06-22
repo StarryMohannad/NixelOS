@@ -14,6 +14,9 @@
    home-manager.inputs.nixpkgs.follows = "nixpkgs";
    home-manager.url = "github:nix-community/home-manager";
 
+   nixvim.url = "github:nix-community/nixvim";
+   nixvim.inputs.nixpkgs.follows = "nixpkgs";
+
    impermanence.url = "github:nix-community/impermanence";
    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
    stylix.url = "github:danth/stylix";
