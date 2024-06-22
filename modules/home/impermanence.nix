@@ -1,7 +1,6 @@
-{ lib, ...}: let
- inherit (lib) forEach;
+{ lib, ...}:
 
-in {
+{
  home.persistence."/persist/home/starry".directories = [
    "dl/persist"
    "sync"
@@ -11,39 +10,20 @@ in {
    ".local/state/syncthing"
    ".cache/flatpak"
  ]
- ++ forEach [
-      "aseprite" 
-      "discord" 
-      "dolphin-emu" 
-      "GIMP" 
-      "gzdoom" 
-      "keepassxc"
-      "obs-studio"   
-      "PCSX2" 
-      "syncthing"
-      "Thunar" 
-      "Vencord" ] ( 
+ ++ lib.forEach [
+     "keepassxc"
+     "syncthing"
+     "Thunar" ] ( 
       x: ".config/${x}"
     ) 
- ++ forEach [ 
-      "crispy-doom"
-      "dolphin-emu"
-      "DoomRunner"
-      "duckstation"
+ ++ lib.forEach [ 
       "flatpak"
-      "kdenlive"
       "keyrings"
       "mime"
-      "mpd"
-      "PrismLauncher"
-      "Steam"
-      "Terraria"
-      "zoxide"
-      "zplug"
-      "zsh" ] (
+      "mpd" ] (
       x: ".local/share/${x}"
     )
- ++ [ ".ssh" ".var" ".mozilla" ];
+ ++ [ ".var" ".mozilla" ];
 
  home.persistence."/persist/home/starry".allowOther = true;
 }

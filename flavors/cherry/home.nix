@@ -10,9 +10,10 @@
    inputs.impermanence.nixosModules.home-manager.impermanence
    ../../modules/home/impermanence.nix
 
-   ../../modules/home/dev-utils/default.nix
+   ../../modules/home/dev/default.nix
    ../../modules/home/games/default.nix
    ../../modules/home/hyprland/default.nix
+   ../../modules/home/multimedia/default.nix
    ../../modules/home/shell/default.nix
 
    ../../modules/home/backend.nix

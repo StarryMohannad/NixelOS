@@ -2,8 +2,10 @@
 
 {
  imports = [
-   ./zsh.nix
+   ./impermanence.nix
+   ./packages.nix
    ./starship.nix
+   ./zsh.nix
  ];
 
  programs.bat.enable = true;
