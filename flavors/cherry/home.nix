@@ -16,7 +16,7 @@
    ../../modules/home/multimedia/default.nix
    ../../modules/home/shell/default.nix
 
-   ../../modules/home/firefox.nix
+   ../../modules/home/firefox/default.nix
    ../../modules/home/session-varibles.nix
    ../../modules/home/syncthing.nix
 
