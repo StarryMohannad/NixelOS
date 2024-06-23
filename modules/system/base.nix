@@ -131,4 +131,15 @@
  nix.settings.experimental-features = [ "nix-command" "flakes"  ]; 
  
  programs.adb.enable = true;
+
+ system.autoUpgrade = {
+   enable = true;
+   flake = inputs.self.outPath;
+   flags = [
+     "--upgrade"
+     "-L"
+   ];
+   dates = "09:00";
+   randomizedDelaySec = "45min";
+ };
 }
