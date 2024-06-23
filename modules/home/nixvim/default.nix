@@ -1,10 +1,13 @@
 { config, pkgs, inputs, ... }:
 
 {
- inputs = [
+ imports = [
    inputs.nixvim.homeManagerModules.nixvim 
  ];
  
  programs.nixvim.enable = true;
  programs.nixvim.defaultEditor = true;
+
+ stylix.targets.nixvim.enable = false;
+ programs.nixvim.colorscheme.catppuccin.enable = true;
 }
