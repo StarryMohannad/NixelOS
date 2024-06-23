@@ -11,5 +11,4 @@
  stylix.targets.nixvim.enable = false;
  programs.nixvim.colorschemes.catppuccin.enable = true;
  programs.nixvim.colorschemes.catppuccin.settings.flavors = "frappe";
- programs.nixvim.colorschemes.catppuccin.settings.transparent_background = true;
 }
