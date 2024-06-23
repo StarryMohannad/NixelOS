@@ -9,5 +9,6 @@
  programs.nixvim.defaultEditor = true;
 
  stylix.targets.nixvim.enable = false;
- programs.nixvim.colorscheme.catppuccin.enable = true;
+ programs.nixvim.colorschemes.catppuccin.enable = true;
+ programs.nixvim.colorschemes.catppuccin.settings.flavors = "frappe";
 }
