@@ -4,7 +4,6 @@
    ../../hosts/15s-eq2009ne.nix
 
    ../../modules/system/base.nix
-   ../../modules/system/displaymanager-fonts.nix
    ../../modules/system/virtualisation.nix
    ../../modules/system/hyprland.nix
  ];

@@ -33,6 +33,5 @@
    args = { inherit inputs; };
    in {
      nixosConfigurations."cherry" = nixpkgs.lib.nixosSystem { specialArgs = args; modules = GlobalModules ++ [ ./flavors/cherry/system.nix ]; };
-     nixosConfigurations."black-cherry" =  nixpkgs.lib.nixosSystem { specialArgs = args; modules = GlobalModules ++ [ ./flavors/black-cherry/system.nix ]; };
    };
 }
