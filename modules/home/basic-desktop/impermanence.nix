@@ -8,7 +8,12 @@
   
    ".config/Thunar"
    ".config/nomacs"
+   ".config/keepassxc"
+   ".config/syncthing"
   
    ".local/share/mpd"
+
+   ".local/state/syncthing"
+   ".cache/keepassxc"
  ];
 }

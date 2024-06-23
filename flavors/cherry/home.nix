@@ -8,7 +8,7 @@
 
  imports = [
    inputs.impermanence.nixosModules.home-manager.impermanence
-   ../../modules/home/impermanence.nix
+   ../../modules/home/global/default.nix
 
    ../../modules/home/basic-desktop/default.nix
    ../../modules/home/dev/default.nix
@@ -16,13 +16,7 @@
    ../../modules/home/multimedia/default.nix
    ../../modules/home/nixvim/default.nix
    ../../modules/home/shell/default.nix
-
    ../../modules/home/firefox/default.nix
-   ../../modules/home/session-varibles.nix
-   ../../modules/home/syncthing.nix
-
-   ../../modules/home/packages.nix
-   ../../modules/home/theme.nix
  ];
 
  # This value determines the Home Manager release that your configuration is

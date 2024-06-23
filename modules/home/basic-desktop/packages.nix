@@ -7,6 +7,8 @@
    nomacs
    xfce.thunar
    zathura
+
+   keepassxc
  ];
 }
 

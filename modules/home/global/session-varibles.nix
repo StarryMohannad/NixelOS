@@ -7,7 +7,6 @@
    XDG_STATE_HOME = "$HOME/.local/state";
    XDG_CACHE_HOME = "$HOME/.cache";
 
-   EDITOR = "nvim";
    BROWSER = "firefox";
 
    XCOMPOSECACHE = "$HOME/.cache/X11/xcompose";

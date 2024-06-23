@@ -21,7 +21,7 @@
 
  home-manager.extraSpecialArgs = {inherit inputs;};
  home-manager.users = {
-   "starry" = import ../home.nix;
+   "starry" = import ./home.nix;
  };
  
  # Copy the NixOS configuration file and link it from the resulting system
