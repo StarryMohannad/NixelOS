@@ -9,6 +9,7 @@
    zathura
 
    keepassxc
+   vesktop
  ];
 }
 
