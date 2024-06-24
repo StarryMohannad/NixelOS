@@ -1,3 +1,6 @@
+outline_list:
+  item_spacing: 5
+
 = NixelOS
 
 NixelOS is my collection of configs for NixOS and Home Manager
