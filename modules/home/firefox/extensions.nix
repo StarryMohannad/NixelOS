@@ -6,6 +6,7 @@
   indie-wiki-buddy
   keepassxc-browser
   return-youtube-dislikes
+  sponsorblock
   startpage-private-search
   stylus
   ublock-origin
