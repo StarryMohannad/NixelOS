@@ -11,5 +11,7 @@
    keepassxc
    vesktop
  ];
+ 
+ config.services.arrpc.enable = true;
 }
 
