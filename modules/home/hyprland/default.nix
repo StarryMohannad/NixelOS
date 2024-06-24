@@ -11,7 +11,8 @@
 
  # Notification Daemon
  services.mako.enable = true;
- services.mako.anchor = "bottom-left";
+ services.mako.anchor = "bottom-right";
+ services.mako.margin = "0,25,25";
 
  programs.wofi.enable = true; # Menu
 
