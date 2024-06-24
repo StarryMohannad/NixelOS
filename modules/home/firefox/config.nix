@@ -41,19 +41,20 @@
  
  programs.firefox.profiles."starry".settings = {
    "browser.firefox-view.search.enabled" = false;
-   "browser.urlbar.quicksuggest.enabled" = false;
-   "browser.urlbar.suggest.topsites" = false;
-   "browser.urlbar.suggest.history" =  false;
-   "signon.prefillForms" = false;
    "browser.urlbar.autoFill" = false;
+   "browser.urlbar.quicksuggest.enabled" = false;
+   "browser.urlbar.suggest.history" =  false;
+   "browser.urlbar.suggest.topsites" = false;
+   "dom.push.enabled" = false;
+   "dom.webnotifications.serviceworker.enabled" = false;
+   "extensions.pocket.enabled" = false;
+   "general.autoScroll" = true;
+   "identity.fxaccounts.enabled" = false;
    "keyword.enabled" = true;
    "network.cookie.lifetimePolicy" = 0;
-   "dom.webnotifications.serviceworker.enabled" = false;
-   "dom.push.enabled" = false;
-   "extensions.pocket.enabled" = false;
-   "toolkit.legacyUserProfileCustomizations.stylesheets" = true;
    "network.http.referer.XOriginPolicy" = 0;
-   "identity.fxaccounts.enabled" = false;
+   "signon.prefillForms" = false;
+   "toolkit.legacyUserProfileCustomizations.stylesheets" = true;
    "ui.context_menus.after_mouseup" = true;
  };
 
