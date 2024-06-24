@@ -27,19 +27,19 @@ these are the presets of configurations... the only one avalible right now is `c
 === Modules 
 
 - Home
- * basic-desktop: sets up xdg-folders in the home directory
- * dev: sets up things for development
- * firefox: sets up a firefox profile with a modified arkenfox config and a list of plugins
- * games: installs game emulators and launchers with mangohud
- * hyprland: sets up a config for hyprland the Window Manager, waybar, hyprlock and hyprpaper
- * multimedia: installs suite of programs for editing pictures and videos
- * nixvim: sets up a neovim config 
- * shell: sets up the zsh shell with starship
- * global: a shared home config between all flavors
+ - basic-desktop: sets up xdg-folders in the home directory
+ - dev: sets up things for development
+ - firefox: sets up a firefox profile with a modified arkenfox config and a list of plugins
+ - games: installs game emulators and launchers with mangohud
+ - hyprland: sets up a config for hyprland the Window Manager, waybar, hyprlock and hyprpaper
+ - multimedia: installs suite of programs for editing pictures and videos
+ - nixvim: sets up a neovim config 
+ - shell: sets up the zsh shell with starship
+ - global: a shared home config between all flavors
 - System
- * global: a shared home config between all flavors
- * hyprland: adds hyprland to sddm
- * virtualization: only adds wayland right now
+ - global: a shared home config between all flavors
+ - hyprland: adds hyprland to sddm
+ - virtualization: only adds wayland right now
 - disko.nix: just a disk layout... 1mb boot, 500mb kernals, 32gb swap because why not and the rest is a good old btrfs root
 - wallpaper.png: wait why is this here ??
 
