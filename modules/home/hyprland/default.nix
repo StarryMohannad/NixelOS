@@ -9,7 +9,10 @@
    ./packages.nix
  ];
 
- services.mako.enable = true; # Notification Daemon
+ # Notification Daemon
+ services.mako.enable = true;
+ services.mako.anchor = "bottom-left";
+
  programs.wofi.enable = true; # Menu
 
  # Sourcing Files
