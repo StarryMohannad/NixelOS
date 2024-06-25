@@ -51,7 +51,7 @@ configurations for diffrent machines
 to install my poorly put together config pack
 
 1. boot up into a NixOS Live enviorment
-if you don't have a NixOS iso you can get one https://nixos.org/download:"Here" 
+if you don't have a NixOS iso you can get one [Here](https://nixos.org/download) 
 
 1. clone this repo
 by using the following command
@@ -81,6 +81,6 @@ nixos-install --root /mnt --flake /path/to/repo/nixos#flavor
 
 I want to thank
 
-[Vimjoyer](https://www.youtube.com/@vimjoyer): for his excellent and helpful tutorials
-[Sioodmy](https://github.com/sioodmy/dotfiles): for his dotfiles that helped me with the structer of my repo
+[Vimjoyer](https://www.youtube.com/@vimjoyer): for his excellent and helpful tutorials  
+[Sioodmy](https://github.com/sioodmy/dotfiles): for his dotfiles that helped me with the structer of my repo  
 [NoBiolerplate](https://www.youtube.com/@NoBoilerplate): for convincing me to try NixOS
