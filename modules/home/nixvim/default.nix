@@ -5,7 +5,6 @@
    inputs.nixvim.homeManagerModules.nixvim 
 
    ./config.nix
-   ./packages.nix
    ./plugins.nix
  ];
  
