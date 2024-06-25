@@ -79,11 +79,12 @@ nixos-install --root /mnt --flake /path/to/repo/nixos#flavor
 
 5. Congrats :DD
 
-## Special Thanks
+** Special Thanks
 
 I want to thank
 
-[[https://www.youtube.com/@vimjoyer][Vimjoyer]]: for his excellent and helpful tutorials    
-[[https://github.com/sioodmy/dotfiles][Sioodmy]]: for his dotfiles that helped me with the structer of my repo  
-[[https://www.youtube.com/@NoBoilerplate][NoBiolerplate]]: for convincing me to try NixOS
+[[https://www.youtube.com/@vimjoyer][Vimjoyer]]: for his excellent and helpful tutorials
 
+[[https://github.com/sioodmy/dotfiles][Sioodmy]]: for his dotfiles that helped me with the structer of my repo 
+
+[[https://www.youtube.com/@NoBoilerplate][NoBiolerplate]]: for convincing me to try NixOS
