@@ -31,7 +31,10 @@
      "2815"."privacy.clearOnShutdown_v2.cookiesAndStorage".value = false;
    };
    "4000".enable = true;
-   "4500".enable = true;
+   "4500" = {
+      enable = true;
+      "4501"."privacy.resistFingerprinting".value = false;
+   };
    "5000".enable = true;
    "5500".enable = true;
    "6000".enable = true;
@@ -56,6 +59,7 @@
    "signon.prefillForms" = false;
    "toolkit.legacyUserProfileCustomizations.stylesheets" = true;
    "ui.context_menus.after_mouseup" = true;
+   "browser.display.use_system_colors" = false;
  };
 
  stylix.targets.firefox.profileNames = ["starry"];
