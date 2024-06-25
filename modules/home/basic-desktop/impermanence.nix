@@ -10,6 +10,7 @@
    ".config/nomacs"
    ".config/keepassxc"
    ".config/syncthing"
+   ".config/vesktop"
   
    ".local/share/mpd"
 
