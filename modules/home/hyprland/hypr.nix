@@ -11,8 +11,8 @@
  wayland.windowManager.hyprland.settings.master.new_is_master = true;
  wayland.windowManager.hyprland.settings.general = {
   border_size = 3;
-  gaps_in = 5;
-  gaps_out = 5;
+  gaps_in = 6;
+  gaps_out = 6;
  };
 
  # Input Settings
