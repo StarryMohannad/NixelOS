@@ -12,7 +12,7 @@
  wayland.windowManager.hyprland.settings.general = {
   border_size = 3;
   gaps_in = 6;
-  gaps_out = 6;
+  gaps_out = 12;
  };
 
  # Input Settings
