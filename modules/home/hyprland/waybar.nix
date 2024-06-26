@@ -6,7 +6,7 @@
  
  # Waybar Settings
  programs.waybar.settings = [{
-   height = 15;
+   height = 10;
    modules-left = [ "hyprland/workspaces" ]; 
    modules-center = [ "mpd" ];
    modules-right = [
@@ -52,7 +52,7 @@
     border: none;
     border-radius: 0;
     font-family: "FiraCode Nerd Font";
-    font-size: 10px;
+    font-size: 1px;
     min-height: 0;
   }
 
