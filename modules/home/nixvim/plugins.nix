@@ -2,7 +2,8 @@
 
 {
  programs.nixvim.plugins.cmp.enable = true;
- programs.nixvim.plugins.cmp.autoEnableSources
+ programs.nixvim.plugins.cmp.autoEnableSources = true;
+
  programs.nixvim.plugins.neocord.enable = true;
  programs.nixvim.plugins.neogit.enable = true;
  programs.nixvim.plugins.fzf-lua.enable = true;
