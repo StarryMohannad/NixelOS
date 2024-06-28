@@ -51,7 +51,7 @@ configurations for diffrent machines
 to install my poorly put together config pack
 
 1. boot up into a NixOS Live enviorment
-if you don't have a NixOS iso you can get one [Here](https://nixos.org/download) 
+if you don't have a NixOS iso you can get one [https://nixos.org/download Here] 
 
 2. clone this repo
 by using the following command
