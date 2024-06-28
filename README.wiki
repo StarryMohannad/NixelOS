@@ -68,7 +68,8 @@ sudo nix --experimental-features "nix-command flakes" run github:nix-community/d
 }}}
 
 4. use the nix install command to install NixOS on the Formated disk
-also replace /path/to/repo with the path to the repo and and replace flavor with the flavor of your choice (not like you have any choice right now)
+
+also replace /path/to/repo with the path to the repo and and replace flavor with the flavor of your choice (not like you have any choice right now)<br>
 (before you install make sure to change the hashed password in your flavor's system.nix to your password by using `mkpasswd`)
 
 {{{bash
