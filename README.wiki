@@ -56,22 +56,22 @@ if you don't have a NixOS iso you can get one [https://nixos.org/download Here]
 2. clone this repo
 by using the following command
 
-{{code|lang=bash|
+<code>
 git clone https://github.com/StarryMohannad/NixelOS
-}}
+</code>
 
 3. go to the root of the repo and run this command to format your disk
 
-{{code|lang=bash|
+<code>
 sudo nix --experimental-features "nix-command flakes" run github:nix-community/disko -- --mode disko /tmp/disko.nix --arg device '"/path/to/your/disk"'
-}}
+</code>
 
 4. use the nix install command to install NixOS on the Formated disk
 (before you install make sure to change the hashed password in your flavor's system.nix to your password by using `mkpasswd`)
 
-{{code|lang=bash|
+<code>
 nixos-install --root /mnt --flake /path/to/repo/nixos#flavor
-}}
+</code>
 
 5. Congrats :DD
 
