@@ -3,6 +3,7 @@
 {
  # Colorscheme
  stylix.targets.nixvim.enable = false;
+
  programs.nixvim.colorschemes.catppuccin.enable = true;
  programs.nixvim.colorschemes.catppuccin.settings.flavors = "frappe";
 
@@ -15,4 +16,7 @@
  programs.nixvim.opts.smartindent = true;
  programs.nixvim.opts.tabstop = 2;
  programs.nixvim.opts.shiftwidth = 1;
+
+ # Plugin Configs
+ programs.nixvim.globals.vimwiki_list = [{ path = "~/sync/docs/wiki"; }];
 }

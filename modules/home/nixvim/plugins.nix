@@ -19,18 +19,10 @@ in {
  programs.nixvim.plugins.neogit.enable = true;
  programs.nixvim.plugins.fzf-lua.enable = true;
  programs.nixvim.plugins.telescope.enable = true;
- # programs.nixvim.plugins.lualine.enable = true;
  
  programs.nixvim.plugins.lazy.enable = true;
- programs.nixvim.extraPlugins = with pkgs.vimPlugins; [
-   {
-    plugin = orgmode;
-    config = "lua require('orgmode').setup{}";
-   }
+ programs.nixvim.plugins.lazy.plugins = with pkgs.vimPlugins; [
+   vimwiki
    vim-table-mode
-   {
-     plugin = (fromGitHub "HEAD" "ea3e467bef7a2c17998bc471844bbd7bd3438f84" "ranjithshegde/orgWiki.nvim");
-     config = "lua require('orgWiki').setup {wiki_path = { '~/sync/docs/org' }, diary_path = '~/sync/docs/org/diary'}";
-   }
  ];
 }
