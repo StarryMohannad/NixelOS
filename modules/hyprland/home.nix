@@ -14,9 +14,9 @@
  programs.wofi.enable = true; # Menu
 
  # Sourcing Files
- home.file.".local/share/sounds".source = ./sub/files/sounds;
- home.file.".local/share/scripts".source = ./sub/files/scripts;
- home.file.".local/share/kaomoji".source = ./sub/files/kaomoji;
+ home.file.".local/share/sounds".source = ./sub-files/sounds;
+ home.file.".local/share/scripts".source = ./sub-files/scripts;
+ home.file.".local/share/kaomoji".source = ./sub-files/kaomoji;
  home.file.".local/share/wallpaper.png".source = ../../wallpaper.png;
  
  # Session Varibles
