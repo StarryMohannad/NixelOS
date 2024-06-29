@@ -56,7 +56,7 @@
      "pics" = " ";
      "proj" = "󰲋 ";
    };
- }
+ };
 
  programs.starship.settings.git_branch = {
    symbol = " ";
