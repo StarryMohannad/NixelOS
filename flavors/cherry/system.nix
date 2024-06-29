@@ -3,6 +3,7 @@
  imports = [ 
    ../../hosts/15s-eq2009ne.nix
 
+   ../../modules/bluetooth/system.nix
    ../../modules/syncthing/system.nix
    ../../modules/hyprland/system.nix
    ../../modules/global/system.nix
