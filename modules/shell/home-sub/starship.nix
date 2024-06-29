@@ -67,7 +67,7 @@
  programs.starship.settings.git_status = {
    style = "bg:#${config.lib.stylix.colors.base0B}";
    format = "[[($all_status$ahead_behind )](fg:#${config.lib.stylix.colors.base05} bg:#${config.lib.stylix.colors.base0B})]($style)";
- }
+ };
 
  programs.starship.settings.nodejs = {
    symbol = "";
