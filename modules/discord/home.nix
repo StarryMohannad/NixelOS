@@ -1,6 +1,6 @@
 { config, pkgs, ... }:
 
 {
- import = [ ./config.nix ];
+ imports = [ ./config.nix ];
  services.arrpc.enable = true;
 }
