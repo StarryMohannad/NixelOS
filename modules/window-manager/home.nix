@@ -9,8 +9,5 @@
   ./mpd.nix
   ./ncmpcpp.nix
   ./packages.nix
-  ./syncthing.nix
- 
-  ../hyprland/default.nix
  ];
 }

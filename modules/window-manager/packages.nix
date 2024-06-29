@@ -7,11 +7,6 @@
    nomacs
    xfce.thunar
    zathura
-
-   keepassxc
-   vesktop
  ];
- 
- config.services.arrpc.enable = true;
 }
 
