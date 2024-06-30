@@ -88,19 +88,10 @@
 
  wayland.windowManager.hyprland.extraConfig = ''
    bind = $modkey, n, submap, vimwiki
-   bind = $modkey, c, submap, config
   
    submap = vimwiki
    bind =, n, exec, kitty nvim -c :VimwikiIndex
    bind =, d, exec, kitty nvim -c :VimwikiDiaryIndex
-   bind=,catchall,submap,reset
-
-   submap = config
-   bind =, h, submap, config-hotkey
-   bind=,catchall,submap,reset
-
-   submap = config-submap
-   bind=, d, exec, ~/.local/share/scripts/pf-toggle-service arRPC
    bind=,catchall,submap,reset
 
    submap = reset
