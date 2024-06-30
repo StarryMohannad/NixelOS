@@ -93,16 +93,18 @@
    submap = vimwiki
    bind =, n, exec, nvim -c :VimwikiIndex
    bind =, d, exec, nvim -c :VimwikiDiaryIndex
+   bind=,catchall,submap,reset
 
    submap = config
    bind =, h, submap, config-hotkey
+   bind=,catchall,submap,reset
 
    submap = config-submap
    bind=, d, exec, ~/.local/share/scripts/pf-toggle-service arRPC
+   bind=,catchall,submap,reset
 
    submap = reset
 
-   bind=,catchall,submap,reset
  '';
 
  # Autostart
