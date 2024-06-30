@@ -1,0 +1,6 @@
+#!/bin/bash
+
+if systemctl --user is-active --quiet $1
+  then systemctl --user stop $1
+  else systemctl --user start $1
+fi

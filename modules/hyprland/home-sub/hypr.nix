@@ -98,7 +98,7 @@
    bind =, h, submap, config-hotkey
 
    submap = config-submap
-   bind=, d, exec, ~/.local/share/scripts/toggle-service arRPC.service
+   bind=, d, exec, ~/.local/share/scripts/pf-toggle-service arRPC
 
    submap = reset
 
