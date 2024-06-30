@@ -91,8 +91,8 @@
    bind = $modkey, c, submap, config
   
    submap = vimwiki
-   bind =, n, exec, nvim -c :VimwikiIndex
-   bind =, d, exec, nvim -c :VimwikiDiaryIndex
+   bind =, n, exec, kitty nvim -c :VimwikiIndex
+   bind =, d, exec, kitty nvim -c :VimwikiDiaryIndex
    bind=,catchall,submap,reset
 
    submap = config
