@@ -3,6 +3,7 @@
 {
  # Enable Window Manager
  wayland.windowManager.hyprland.enable = true;
+ wayland.windowManager.hyprland.sourceFirst = false;
 
  # Display Settings
  wayland.windowManager.hyprland.settings.monitor = [ "eDP-1,1920x1080@60,0x0,1" ];
@@ -79,10 +80,30 @@
      "$Smodkey, ${ws}, movetoworkspace, ${toString (x + 1)}"
    ]
  )10));
+
  wayland.windowManager.hyprland.settings.bindm = [
    "$modkey, mouse:272, movewindow"
    "$modkey, mouse:273, resizewindow"
  ];
+
+ wayland.windowManager.hyprland.extraConfig = ''
+   bind = $modkey, n, submap, vimwiki
+   bind = $modkey, c, submap, config
+  
+   submap = vimwiki
+   bind =, n, exec, nvim -c :VimwikiIndex
+   bind =, d, exec, nvim -c :VimwikiDiaryIndex
+
+   submap = config
+   bind =, h, submap, config-hotkey
+
+   submap = config-submap
+   bind=, d, exec, ~/.local/share/scripts/toggle-service arRPC.service
+
+   submap = reset
+
+   bind=,catchall,submap,reset
+ '';
 
  # Autostart
  wayland.windowManager.hyprland.settings.exec-once = [ "setsid -f mpv --no-video ~/.local/share/sounds/startup.mp3" ];
