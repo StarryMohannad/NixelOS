@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 if systemctl --user is-active --quiet $1
   then systemctl --user stop $1
