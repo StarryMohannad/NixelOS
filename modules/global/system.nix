@@ -21,8 +21,7 @@
  # Set your time zone.
  time.timeZone = "Asia/Amman";
 
- # Enable Flatpaks
- services.flatpak.enable = true;
+ # Enable GVFS
  services.gvfs.enable = true;
 
  programs.mtr.enable = true;

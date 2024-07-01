@@ -7,6 +7,7 @@
    ../../modules/syncthing/system.nix
    ../../modules/hyprland/system.nix
    ../../modules/global/system.nix
+   ../../modules/games/system.nix
    ../../modules/shell/system.nix
    ../../modules/dev/system.nix
  ];

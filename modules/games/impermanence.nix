@@ -14,6 +14,7 @@
      "dolphin-emu"
      "DoomRunner"
      "duckstation"
+     "Steam"
      "PrismLauncher"
      "Terraria"
    ] (
